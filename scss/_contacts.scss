@@ -1,0 +1,55 @@
+.footer {
+    
+}
+.contacts {
+    background-color: $dark;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+
+        @include hover {
+            & .icon_phone {
+                background-image: url(../img/icons/phone-gray.svg);
+            }
+            & .icon_mail {
+                background-image: url(../img/icons/mail-gray.svg);
+            }
+            & .contacts__icon {
+                background-color: $hover;
+            }
+        }
+    }
+    &__icon {
+        margin-right: 16px;
+    }
+    &__phone,
+    &__mail {
+        text-decoration: none;
+        @include font($fz: 1.8rem, $fc: $gray);
+    }
+    &__phone {
+
+    }
+    &__mail {
+
+    }
+}
+
+.dewelopment {
+    background-color: $black;
+    text-align: center;
+    @include font($fz: 1.6rem, $fc: $dark-gray);
+    padding: 24px;
+
+    &__link {
+        @include font($fz: 1.6rem, $fc: $hover);
+    }
+}

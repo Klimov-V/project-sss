@@ -1,0 +1,178 @@
+.header {
+    border-bottom: $border-width dashed $border-color;
+    position: relative;
+    margin-bottom: 220px;
+
+    &__content {
+        background-image: url(../img/header_bg.jpg);
+        background-size: 98% 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 632px;
+        width: 100%;
+        margin-bottom: 90px;
+    
+        & .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+    }
+    &__text {
+
+        
+    }
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__subtitle {
+        max-width: 545px;
+        padding-left: 30px;
+        position: relative;
+        color: $dark-gray;
+        font-size: 2.2rem;
+        margin-bottom: 35px;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            background-color: #E43137;
+            width: $border-width;
+            height: 100%;
+        }
+
+        &_marked {
+            color: $primary-color;
+            font-weight: 600;
+        }
+    }
+
+    &__photo {
+        max-width: 480px;
+        height: 720px;
+        position: relative;
+        bottom: 45px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+
+.logo {
+    max-width: 279px;
+    height: 68px;
+
+    &__container {
+        height: 104px;
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.achievements {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -120px;
+}
+.achievement {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 15px;
+    box-shadow: 0px 10px 80px rgba(3, 70, 136, 0.1);
+    text-align: center;
+    width: 478px;
+    padding: 32px 90px;
+    background-color: $white;
+    color: $primary-color;
+    
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(270deg, $blue, $primary-color);
+        z-index: -1;
+        opacity: 0;
+        @include tr;
+    }
+    
+    &:first-of-type:before,
+    &:last-of-type:before {
+        content: "";
+        width: 106px;
+        height: 106px;
+        position: absolute;
+    }
+    &:first-of-type:before {
+        top: 0;
+        left: 0;
+        box-shadow: -2px -2px rgba(3, 70, 136, 1);
+    }
+    &:last-of-type:before {
+        bottom: 0;
+        right: 0;
+        box-shadow: 2px 2px rgba(3, 70, 136, 1);
+    }
+
+    &__icon {
+        margin-bottom: 24px;
+
+        &_front {
+            fill: currentColor;
+        }
+        &_back {
+            fill: $medium-blue;
+        }
+    }
+    &__number {
+        color: $primary-color;
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: 24px;
+        position: relative;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 95px;
+            height: 95px;
+            background: #F5F8FE;
+            position: absolute;
+            z-index: -2;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__text {
+        max-width: 300px;
+        color: $dark-gray;
+        font-size: 1.8rem;
+    }
+    
+    @include hover {
+        color: $white;
+
+        &:after {
+            opacity: 1;
+        }
+        .achievement__text,
+        .achievement__number {
+            color: $white;
+        }
+    }
+}

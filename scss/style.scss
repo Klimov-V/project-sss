@@ -1,0 +1,90 @@
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  @include font($ff: $body-ff, $fz: 1.6rem, $fc: $dark, $fw: 400, $lh: 130%);
+  background-color: $body-bg;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1536px;
+  padding: 0 16px;
+}  
+
+.section__title {
+  @include font($ff: $body-ff, $fz: 4.8rem, $fc: $dark, $fw: 600, $lh: 130%);
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &_line {
+    position: relative;
+    padding-left: 130px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      background-color: #E43137;
+      width: 96px;
+      height: $border-width;
+    }
+  }
+}
+
+.btn {
+  @include font($fz: 2rem, $fc: $white, $fw: 500);
+  text-decoration: none;
+  display: inline-block;
+  background-image: linear-gradient(to right, #036FC3 0%, #0BA0F9 50%, #036FC3 100%);
+  background-size: 200%;
+  box-shadow: 0px 15px 30px rgba(8, 114, 201, 0.25);
+  border-radius: 40px;
+  padding: .6em 3.35em .6em 1.6em;
+  position: relative;
+  height: 56px;
+
+  @include hover {
+    background-position-x: right;
+    @include tr;
+  }
+
+  & span {
+    display: flex;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+@import 'icons';
+@import 'socials';
+@import 'slider';
+@import 'header';
+@import 'chouse';
+@import 'speaker';
+@import 'companys';
+@import 'contacts';

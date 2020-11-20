@@ -1,0 +1,121 @@
+.chouse {
+    padding-bottom: 200px;
+
+    &__title {
+        background-image: url(../img/courses__title_bg.jpg);
+        background-size: 98% 100%;
+        background-repeat: no-repeat;
+        background-position: left;
+        padding: 100px 0 245px;
+    }
+
+
+}
+.courses {
+    display: flex;
+    justify-content: space-between;
+}
+.course {
+    width: 480px;
+    box-shadow: 0px 10px 80px rgba(3, 70, 136, 0.1);
+    background-color: $white;
+    margin-top: -160px;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: calc(100% - 64px);
+        border-bottom: 24px solid $dark-blue;
+        border-left: 32px solid transparent;
+        border-right: 32px solid transparent;
+        position: absolute;
+        top: -24px;
+        left: 0;
+    }
+
+    &__title {
+        margin: 0;
+        width: 416px;
+        height: 128px;
+        background-image: linear-gradient(270deg, $blue, $primary-color);
+        position: absolute;
+        top: -24px;
+        left: 32px;
+        @include font($fz: 2.6rem, $fc: $white, $fw: 600);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__discription{
+        padding: 136px 32px 0;
+        height: 550px;
+
+        .discription {
+            &__part {
+                margin-bottom: 20px;
+
+                &:last-of-type {
+                    .discription__title {
+                        padding-bottom: 0;
+                        padding-right: 8px;
+                    }
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            &__title {
+                padding-bottom: 10px;
+                display: flex;
+                align-items: center;
+                @include font($fz: 2rem, $fc: $dark, $fw: 600);
+            }
+            &__icon {
+                padding-right: 15px;
+            }
+            &__text {
+                @include font($fz: 1.8rem, $fc: $dark-gray, $fw: 400);
+            }
+        }
+    }
+    &__bottom {
+        border-top: $border-width dashed $border-color;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+
+        &:before,
+        &:after {
+            content: "";
+            // background-color: rgba(3, 70, 136, 0.1);
+            position: absolute;
+            width: 56px;
+            height: 56px;
+            border-radius: 100px;
+            top: 50%;
+            
+        }
+        &:before {
+            left: -28px;
+            box-shadow: inset -25px 0 40px rgba(3, 70, 136, 0.1);
+        }
+        &:after {
+            right: -28px;
+            box-shadow: inset 25px 0 40px rgba(3, 70, 136, 0.1);
+        }
+    }
+    &__price {
+        margin-top: 25px;
+        @include font($fz: 4.8rem, $fc: $primary-color, $fw: 600);
+    }
+    &__notice {
+        @include font($fz: 1.6rem, $fc: #111);
+        margin: 0 auto;
+        max-width: 315px;
+    }
+    &__btn {
+        bottom: -28px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
