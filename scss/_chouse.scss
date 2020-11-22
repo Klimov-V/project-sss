@@ -3,12 +3,34 @@
 
     &__title {
         background-image: url(../img/courses__title_bg.jpg);
-        background-size: 98% 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: left;
+        max-width: 98%;
         padding: 100px 0 245px;
+        overflow: hidden;
     }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__arrow {
+        width: 100%;
+        border-top: $border-width dashed $border-color;
+        position: relative;
+        right: -43%;
 
+        &:before {
+            content: "";
+            background-image: url(../img/shevron.png);
+            width: 54px;
+            height: 25px;
+            position: absolute;
+            left: -50px;
+            top: -13px;
+        }
+    }
 
 }
 .courses {

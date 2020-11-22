@@ -129,13 +129,18 @@
     }
 
     &__icon {
-        margin-bottom: 24px;
+        width: 64px;
+        height: 64px;
+        margin: 0 auto 24px;
 
-        &_front {
-            fill: currentColor;
+        &_mentor {
+            background-image: url(../img/icons/mentor_light.png);
         }
-        &_back {
-            fill: $medium-blue;
+        &_building {
+            background-image: url(../img/icons/building_light.png);
+        }
+        &_world {
+            background-image: url(../img/icons/world_light.png);
         }
     }
     &__number {
@@ -165,7 +170,6 @@
     }
     
     @include hover {
-        color: $white;
 
         &:after {
             opacity: 1;
@@ -173,6 +177,15 @@
         .achievement__text,
         .achievement__number {
             color: $white;
+        }
+        .achievement__icon_mentor {
+            background-image: url(../img/icons/mentor_dark.png);
+        }
+        .achievement__icon_building {
+            background-image: url(../img/icons/building_dark.png);
+        }
+        .achievement__icon_world {
+            background-image: url(../img/icons/world_dark.png);
         }
     }
 }
