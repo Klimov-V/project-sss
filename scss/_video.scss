@@ -24,14 +24,71 @@
         border: none;
     }
     &__button {
+        width: 120px;
+        height: 120px;
+        padding: 0;
+        background-color: $play-btn;
+        display: none;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+        &::before {
+            border-bottom: 40px solid $play-btn;
+            border-right: 120px solid transparent;
+            top: -40px;
+        }
+        &::after {
+            border-top: 42px solid $play-btn;
+            border-right: 120px solid transparent;
+            bottom: -42px;
+        }
+
+        &__inner {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: $hover;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                background-color: rgba($hover, .4);
+                animation: vawes;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-out;
+            }
+        }
+    }
+    &__button,
+    &__button__inner,
+    &__button__inner::before, 
+    &__button__inner img {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 126px;
-        height: 199px;
-        border: none;
-        display: none;
-        cursor: pointer;
+    }
+
+}
+
+@keyframes vawes {
+    from {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1.7);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
     }
 }
