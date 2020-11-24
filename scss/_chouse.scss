@@ -10,16 +10,11 @@
         padding: 100px 0 245px;
         overflow: hidden;
     }
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
     &__arrow {
-        width: 100%;
+        width: 40%;
         border-top: $border-width dashed $border-color;
         position: relative;
-        right: -43%;
+        transform: translate(170%, -31px);
 
         &:before {
             content: "";
