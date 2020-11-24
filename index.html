@@ -351,13 +351,13 @@
     <section class="comments">
         <div class="comments__title">
             <div class="container">
-                <h2 class="section__title section__title_line">Что говорят о нас участники курса</h2>
+                <h2 class="section__title section__title_line section__title_lite">Что говорят о нас участники курса</h2>
             </div>
         </div>
-        <div class="comment" id="commentsSlider">
-            <div>
+        <div id="commentsSlider">
+            <div class="comment">
                 <div class="comment__athor">
-                    <img src="" alt="Дина Курбанбалиева">
+                    <img src="./img/diana.jpg" alt="Дина Курбанбалиева">
                 </div>
                 <h3 class="comment__title">Дина Курбанбалиева</h3>
                 <blockquote class="comment__text">
@@ -366,8 +366,26 @@
                     <p>Приходите, будет здорово!</p>
                 </blockquote>
             </div>
-            <div>your content</div>
-            <div>your content</div>
+            <div class="comment">
+                <div class="comment__athor">
+                    <img src="./img/todor.jpg" alt="Тодор Мишев">
+                </div>
+                <h3 class="comment__title">Тодор Мишев</h3>
+                <h4 class="comment__subtitle">Профессор, доктор Софийского Университета им. К. Орхидского (Болгария)</h4>
+                <blockquote class="comment__text">
+                    <p>В 2016 году я прошёл курс "Все секреты успешного выступления" Сергея Стужука. Во время курса были показаны полезные техники, инструменты убеждения, примеры из практики. Приобретённые знания из курса применимы в методической работе со студентами, а также в участии семинарах и конференции. Курс рекомендую преподавателям, специалистам, работающим с публикой.</p>
+                </blockquote>
+            </div>
+            <div class="comment">
+                <div class="comment__athor">
+                    <img src="./img/andru.jpg" alt="Андрей Маковеенко">
+                </div>
+                <h3 class="comment__title">Андрей Маковеенко</h3>
+                <h4 class="comment__subtitle">Руководитель направления производства напитков и снеков в PepsiCo</h4>
+                <blockquote class="comment__text">
+                    <p>Друзья, если у вас было ощущение в жизни «до и после», то тренинг «Все Секреты Успешного Выступления» Сергея Стужука и есть то яркое незабываемое событие, та граница, которая точно изменила меня и точно изменит вас. Вы сможете не боятся, не стеснятся. Вы станете убедительны, красноречивы и вас не поставят в тупик самые трудные вопросы. Сначала я прошёл этот тренинг по собственной инициативе в общей группе. Мой прогресс в искусстве выступления стал убедительным аргументом в организации его и для моей команды. С руководителями отделов PepsiCo мы провели два замечательных дня. Это было как эффективное развитие коммуникационных и презентационных навыков, так и тимбилдинг. Поверьте, моему многолетнему управленческому опыту, хотите быть успешным - пройдите этот тренинг!</p>
+                </blockquote>
+            </div>
         </div>
     </section>
 
@@ -430,20 +448,19 @@
     <script>
         $(document).ready(function(){
             $('#commentsSlider').slick({
-                // autoplay: true,
+                autoplay: true,
                 autoplaySpeed: 5e3,
-                centerMode: !0,
+                centerMode: true,
                 centerPadding: "10%",
                 slidesToShow: 1,
                 focusOnSelect: !0,
                 arrows: !0,
-                adaptiveHeight: !1,
                 swipe: !0,
                 responsive: [{
-                breakpoint: 991.98,
-                settings: {
-                    arrows: !1
-                }
+                    breakpoint: 991.98,
+                    settings: {
+                        arrows: !1
+                    }
                 }]
             });
         });

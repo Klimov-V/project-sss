@@ -25,6 +25,10 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 
+  &_lite {
+    color: $white;
+  }
+
   &_line {
     position: relative;
     padding-left: 130px;

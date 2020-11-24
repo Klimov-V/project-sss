@@ -1,22 +1,53 @@
 .comments {
 
+    max-height: 630px;
+    margin-bottom: 95px;
 
     &__title {
-        background-image: url(../img/courses__title_bg.jpg);
+        background-image: url(../img/comments__title_bg.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        padding: 95px 0 240px;
+        padding: 95px 0 290px;
     }
 }
 
 .comment {
     @include font($fz: 1.8rem, $fc: $dark-gray);
+    position: relative;
 
-    &__athor {}
+    &__athor {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: -60px;
+        left: -40px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(93.31deg, #E43137 5.13%, #FF8642 100%);
+            transform: translate(-20px, 20px);
+            opacity: .6;
+        }
+    }
     &__title {
         @include font($fz: 2.6rem, $fc: $dark, $fw: 600);
-        margin: 0 0 24px;
+        margin: 0 0 10px;
+    }
+    &__subtitle {
+        @include font($fz: 1.8rem, $fc: #003161, $fw: 600);
+        margin: 10px 0 30px;
     }
     &__text {
         margin: 0;
@@ -29,13 +60,13 @@
 
 #commentsSlider {
     position: relative;
-    transform: translateY(-50%);
+    transform: translateY(-57%);
 
     & .slick-arrow {
         position: absolute;
         z-index: 10;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(10%);
         width: 48px;
         height: 48px;
         border-radius: 50%;
@@ -56,17 +87,36 @@
 
     & .slick-slide {
         width: 1188px;
-        height: 360px;
+        min-height: 360px;
         border-bottom: $border-width solid $hover;
-        margin: 50px 75px;
+        margin: 60px 75px 0;
         padding: 30px 45px 40px 110px;
         background-color: $white;
         box-shadow: 0px 10px 80px rgba(3, 70, 136, 0.1);
-        opacity: .5;
-        @include tr;
+        position: relative;
+
     }
     & .slick-center {
-        opacity: 1;
-        @include tr;
+        & .comment__athor:after,
+        &.slick-slide::before {
+            background-color: rgba(255, 255, 255, 0);
+        }
+        
+        & .comment__athor:before {
+            opacity: 1;
+        }
     }
+}
+
+#commentsSlider .comment__athor:after,
+#commentsSlider .slick-slide::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, .6);
 }
