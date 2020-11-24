@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSS</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -29,7 +30,7 @@
                         <p>Секретные методы продвижения сетевого бизнеса <strong class="header__subtitle_marked">по методикам спецслужб.</strong></p>
                         <p>Выберите свой первый курс и откройте для себя новые возможности.</p>
                     </div>
-                    <a class="btn" href="/">Выбрать курс <span><img src="./img/arrow_right.png" alt=""></span></a>
+                    <a class="btn" href="/">Выбрать курс <span></span></a>
                 </div>
                 <div class="header__photo">
                     <img src="./img/header__photo.png" alt="Сергей Стужук">
@@ -99,7 +100,7 @@
                     <div class="course__price">49$</div>
                     <div class="course__notice">При заявке Вам не нужно ничего платить. О дате старта курса мы сообщим Вам лично</div>
                 </div>
-                <a class="btn course__btn" href="/">Подать заявку <span><img src="./img/arrow_right.png" alt=""></span></a>
+                <a class="btn course__btn" href="/">Подать заявку <span></span></a>
             </div>
             <div class="course">
                 <h3 class="course__title">Курс №2 Все секреты<br>успешного выступления</h3>
@@ -137,7 +138,7 @@
                     <div class="course__price">49$</div>
                     <div class="course__notice">При заявке Вам не нужно ничего платить. О дате старта курса мы сообщим Вам лично</div>
                 </div>
-                <a class="btn course__btn" href="/">Подать заявку <span><img src="./img/arrow_right.png" alt=""></span></a>
+                <a class="btn course__btn" href="/">Подать заявку <span></span></a>
             </div>
             <div class="course">
                 <h3 class="course__title">Курс №3 Эффективные<br>переговоры</h3>
@@ -175,7 +176,7 @@
                     <div class="course__price">49$</div>
                     <div class="course__notice">При заявке Вам не нужно ничего платить. О дате старта курса мы сообщим Вам лично</div>
                 </div>
-                <a class="btn course__btn" href="/">Подать заявку <span><img src="./img/arrow_right.png" alt=""></span></a>
+                <a class="btn course__btn" href="/">Подать заявку <span></span></a>
             </div>
            
         </div>
@@ -248,7 +249,7 @@
     <section class="companys">
         <div class="companys__title">
             <div class="container">
-                <h2 class="companys__title-text section__title section__title_line">Компании и организации, которые проходили курсы</h2>
+                <h2 class="section__title section__title_line">Компании и организации, которые проходили курсы</h2>
             </div>
         </div>
         <div class="container">
@@ -348,7 +349,26 @@
     </section>
 
     <section class="comments">
-
+        <div class="comments__title">
+            <div class="container">
+                <h2 class="section__title section__title_line">Что говорят о нас участники курса</h2>
+            </div>
+        </div>
+        <div class="comment" id="commentsSlider">
+            <div>
+                <div class="comment__athor">
+                    <img src="" alt="Дина Курбанбалиева">
+                </div>
+                <h3 class="comment__title">Дина Курбанбалиева</h3>
+                <blockquote class="comment__text">
+                    <p>Привет! Меня зовут Дина и живу я в Валенсии. Я постоянно общаюсь с людьми со сцены, т.к. работаю тренером по йоге и пилатесу. И публика всегда большая до 40 человек. Также я вип-партнер сетевой компании Incruises, т.е. мне просто необходимы знания влиять на публику проводя презентации, ведь это прямые продажи.</p>
+                    <p>Недавно побывала на тренинге Сергея. Получила не просто полезные навыки, а также огромное удовольствия от самого проведения, было с юмором, чётко и без воды, только полезная информация. После теории было достаточно практики, что позволило быть увереннее, выступая перед публикой. Очень рекомендательное мероприятие с настоящим профессионалом своего дела.</p>
+                    <p>Приходите, будет здорово!</p>
+                </blockquote>
+            </div>
+            <div>your content</div>
+            <div>your content</div>
+        </div>
     </section>
 
     <section class="video">
@@ -363,21 +383,21 @@
                     </div>
                 </div>
             </div>
-            <a class="btn video__btn" href="/">Выбрать курс <span><img src="./img/arrow_right.png" alt=""></span></a>
+            <a class="btn video__btn" href="/">Выбрать курс <span></span></a>
         </div>
     </section>
 
     <footer class="footer">
         <div class="contacts">
            <div class="container contacts__container">
-                <a href="/" class="contacts__phone contacts__item">
+                <!-- <a href="/" class="contacts__phone contacts__item">
                         <span class="icon icon_phone contacts__icon"></span>
                         <span>+38 (050) 877 75 35</span>
                 </a>
                 <a href="/" class="contacts__mail contacts__item">
                     <span class="icon icon_mail contacts__icon"></span>
                     <span>support@recruting.biz</span>
-                </a>
+                </a> -->
                 <ul class="social">
                     <li class="social__item">
                         <a href="/" class="social__link icon icon_fb"></a>
@@ -401,7 +421,33 @@
     </footer>
 
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
     <script src="./js/video.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#commentsSlider').slick({
+                // autoplay: true,
+                autoplaySpeed: 5e3,
+                centerMode: !0,
+                centerPadding: "10%",
+                slidesToShow: 1,
+                focusOnSelect: !0,
+                arrows: !0,
+                adaptiveHeight: !1,
+                swipe: !0,
+                responsive: [{
+                breakpoint: 991.98,
+                settings: {
+                    arrows: !1
+                }
+                }]
+            });
+        });
+    </script>
 </body>
 
 </html>
