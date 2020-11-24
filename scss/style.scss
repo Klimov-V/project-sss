@@ -25,6 +25,10 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 
+  &_lite {
+    color: $white;
+  }
+
   &_line {
     position: relative;
     padding-left: 130px;
@@ -61,7 +65,10 @@ body {
 
   & span {
     display: flex;
-    background: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    background-image: url(../img/icons/arrow_right.png);
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 50%;
     width: 46px;
     height: 46px;
@@ -88,3 +95,6 @@ body {
 @import 'speaker';
 @import 'companys';
 @import 'contacts';
+@import 'video';
+@import 'comments';
+@import 'sss';

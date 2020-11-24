@@ -1,0 +1,194 @@
+
+.sss {
+    background-image: url(../img/sss_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 616px;
+    
+    &__container {
+        display: flex;
+    }
+    &__title {
+        text-transform: uppercase;
+        @include font($fz: 13rem, $fc:rgba(255, 255, 255, 0.05), $fw: 600);
+        position: absolute;
+        left: 35px;
+        top:50%;
+        transform-origin: left;
+        transform: translateY(-50%) rotateZ(-90deg);
+    }
+}
+#screenshotsThumbler {
+    max-width: 780px;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+
+    & .slide-tab {
+        @include font($fz: 2.4rem, $fc:$white, $fw: 600);
+        margin-bottom: 24px;
+        padding-left: 90px;
+
+    }
+    & .slide-content {
+        @include font($fz: 1.8rem, $fc:$white);
+        padding-left: 90px;
+
+        & p {
+            padding-bottom: 15px;
+        }
+    }
+}
+
+#screenshotsSlider {
+	width: 100%;
+	padding: 0 15px;
+	margin-bottom: 20px;
+}
+#screenshotsSlider .slick-list {
+	box-shadow: 0 4px 10px rgba(39,38,56,.1);
+}
+#screenshotsSlider .slick-slide {
+	border-radius: 5px;
+	overflow: hidden;
+}
+#screenshotsThumbler .slider-img,
+#screenshotsSlider .slider-img {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+#screenshotsThumbler .slider-img {
+	border-radius: 5px;
+	overflow: hidden;
+}
+#screenshotsThumbler .slider-img img,
+#screenshotsSlider .slider-img img {
+    width: 100%;
+    height: 100%;
+}
+#screenshotsThumbler {
+	// width: 100%;
+	padding: 0 15px;
+}
+#screenshotsThumbler .slick-list {
+	overflow: visible;
+}
+#screenshotsThumbler .slick-track {
+	transform: none!important;
+	width: 100%!important;
+	min-height: 314px!important;
+}
+#screenshotsThumbler .slick-slide {
+	position: relative;
+	float: none;
+	width: 100%!important;
+	margin-bottom: 15px;
+}
+
+#screenshotsThumbler .slide-tab::before {
+	content: '\f107';
+	position: absolute;
+	left: 0;
+	top: 2px;
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 400;
+	color: #6c66ff;
+	transition: all .4s;
+}
+#screenshotsThumbler .slick-current .slide-tab::before {
+	transform: rotate(-180deg);
+}
+#screenshotsThumbler .slick-current .slide-content {
+    display: block;
+}
+#screenshotsThumbler .slide-content {
+    display: none;
+}
+
+
+@media screen and (min-width: 992px) {
+    #screenshotsSlider {
+        padding: 0;
+        margin-bottom: 0;
+        position: absolute;
+        right: 0;
+        top: -40px;
+        width: 816px;
+        height: 608px;
+    }
+
+    #screenshotsSlider .slick-list {
+        box-shadow: none;
+    }
+    #screenshotsSlider .slick-slide {
+        border-radius: 0;
+    }
+    #screenshotsSlider .slider-img {
+        height: 100%;
+        padding-bottom: 0;
+    }
+    #screenshotsSlider .slick-arrow {
+        position: absolute;
+        bottom: 0;
+        top: auto;
+        left: 0;
+        right: auto;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 0;
+        transform: none;
+        background-color: rgba(255,255,255,.7);
+        z-index: 10;
+    }
+    #screenshotsSlider .slick-arrow::before {
+        font-family: 'Font Awesome 5 Pro';
+        color: #292935;
+    }
+    #screenshotsSlider .slick-arrow.slick-prev::before {
+        content: '\f104';
+    }
+    #screenshotsSlider .slick-arrow.slick-next::before {
+        content: '\f105';
+    }
+    #screenshotsSlider .slick-arrow.slick-next {
+        transform: translateX(100%);
+    }
+    #screenshotsThumbler {
+        // background-color: #fff;
+        box-shadow: 20px 0 40px rgba(43,41,62,.17);
+        padding: 20px 0 0;
+    }
+    #screenshotsThumbler .slick-slide {
+        position: relative;
+        margin: 0;
+        padding: 10px;
+        transition: all .4s;
+    }
+    #screenshotsThumbler .slick-slide.slick-current {
+        // background-color: rgba(255,150,65,.08);
+    }
+    #screenshotsThumbler .slick-slide::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: transparent;
+        transition: all .4s;
+    }
+    #screenshotsThumbler .slick-slide.slick-current::before {
+        background-color: #ff9641;
+    }
+    #screenshotsThumbler .slide-tab::before {
+        content: none;
+    }
+    // #screenshotsThumbler .slick-current .slide-tab {
+    //     color: #ff9641;
+    // }
+    #screenshotsThumbler .slide-content p {
+        margin: 5px 0 0;
+    }
+}

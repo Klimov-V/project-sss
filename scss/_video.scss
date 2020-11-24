@@ -1,0 +1,130 @@
+.video {
+
+
+    &__container {
+        margin-bottom: 125px;
+        position: relative;
+    }
+    &__content {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+
+
+        &_enabled {
+            cursor: pointer;
+        }
+        &_enabled .video__button {
+            display: block;
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 228px;
+            height: 31px;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            background-color: $white;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+    }
+    &__media {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    &__button {
+        width: 120px;
+        height: 120px;
+        padding: 0;
+        background-color: $play-btn;
+        display: none;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+        &::before {
+            border-bottom: 40px solid $play-btn;
+            border-right: 120px solid transparent;
+            top: -40px;
+        }
+        &::after {
+            border-top: 42px solid $play-btn;
+            border-right: 120px solid transparent;
+            bottom: -42px;
+        }
+
+        &__inner {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: $hover;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                background-color: rgba($hover, .4);
+                animation: vawes;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-out;
+            }
+        }
+    }
+    &__button,
+    &__button__inner,
+    &__button__inner::before, 
+    &__button__inner img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__btn {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+        // &::before {
+        //     content: "";
+        //     display: block;
+        //     position: absolute;
+        //     width: calc(100% + 6px);
+        //     height: calc(50% + 3px);
+        //     top: -3px;
+        //     left: -3px;
+        //     background-color: $white;
+        //     border-top-left-radius: 50px;
+        //     border-top-right-radius: 50px;
+        //     z-index: -1;
+        // }
+    }
+}
+
+@keyframes vawes {
+    from {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1.7);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
