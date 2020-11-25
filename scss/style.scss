@@ -61,6 +61,7 @@ body {
   @include hover {
     background-position-x: right;
     @include tr;
+    color: $white;
   }
 
   & span {
@@ -94,7 +95,8 @@ body {
 @import 'chouse';
 @import 'speaker';
 @import 'companys';
-@import 'contacts';
+@import 'footer';
 @import 'video';
 @import 'comments';
 @import 'sss';
+@import 'modals';

@@ -10,7 +10,8 @@ var sourcemaps   = require('gulp-sourcemaps');
 gulp.task('sass', function() {
     return gulp.src("scss/*.scss")
         .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: "compressed"}).on('error', sass.logError))
+        // .pipe(sass({outputStyle: "compressed"}).on('error', sass.logError))
+        .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
             cascade: false
         }))

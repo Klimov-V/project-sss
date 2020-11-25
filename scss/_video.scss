@@ -1,6 +1,17 @@
 .video {
+    position: relative;
 
-
+    &::before {
+        content: "";
+        display: block;
+        height: 235px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #f5f8fe;
+    }
     &__container {
         margin-bottom: 125px;
         position: relative;

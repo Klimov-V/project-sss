@@ -16,6 +16,20 @@
     @include font($fz: 1.8rem, $fc: $dark-gray);
     position: relative;
 
+    &::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 40px;
+        right: 45px;
+        background-image: url(../img/icons/quote.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     &__athor {
         width: 120px;
         height: 120px;
@@ -43,7 +57,7 @@
     }
     &__title {
         @include font($fz: 2.6rem, $fc: $dark, $fw: 600);
-        margin: 0 0 10px;
+        margin: 0 0 20px;
     }
     &__subtitle {
         @include font($fz: 1.8rem, $fc: #003161, $fw: 600);
@@ -53,7 +67,7 @@
         margin: 0;
 
         & p {
-            margin: 0 0 16px;
+            margin: 0 0 26px;
         }
     }
 }
