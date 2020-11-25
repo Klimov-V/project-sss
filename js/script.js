@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    new WOW().init();
+
     $('#commentsSlider').slick({
         autoplay: true,
         autoplaySpeed: 5e3,
