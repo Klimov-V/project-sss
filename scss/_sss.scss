@@ -40,6 +40,11 @@
     & .slick-list {
         overflow: visible;
     }
+    & .slick-slide {
+        @include hover {
+            outline: none;
+        }
+    }
 }
 
 #screenshotsSlider {
@@ -122,6 +127,7 @@
                     background-color: $gray;
                     @include hover {
                         cursor: pointer;
+                        outline: none;
                     }
                 }
                 & li.slick-active button {
@@ -143,6 +149,7 @@
                         background-repeat: no-repeat;
                         @include hover {
                             cursor: pointer;
+                            outline: none;
                         }
                     }
                     &-prev {

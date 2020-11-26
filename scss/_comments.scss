@@ -92,6 +92,7 @@
 
         @include hover {
             background-color: #F5F8FE;
+            outline: none;
         }
     }
     & .slick-prev {

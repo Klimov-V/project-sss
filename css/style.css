@@ -485,7 +485,7 @@ body {
     width: 132px;
     height: 473px;
     top: 49%;
-    left: -12%;
+    left: -10%;
     -webkit-transform: rotate(60deg);
     -ms-transform: rotate(60deg);
     -o-transform: rotate(60deg);
@@ -504,16 +504,16 @@ body {
   .red-blok_right {
     width: 390px;
     height: 1400px;
-    top: 0;
-    right: 0;
+    top: -19%;
+    right: -31%;
     -webkit-transform-origin: top;
     -ms-transform-origin: top;
     -o-transform-origin: top;
     transform-origin: top;
-    -webkit-transform: translate(190%, -13%) rotate(60deg);
-    -ms-transform: translate(190%, -13%) rotate(60deg);
-    -o-transform: translate(190%, -13%) rotate(60deg);
-    transform: translate(190%, -13%) rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
     z-index: 5; }
 
 .icon {
@@ -650,6 +650,9 @@ body {
       -ms-flex-align: center;
       align-items: center;
       height: 100%; }
+  .header__text {
+    position: relative;
+    z-index: 10; }
   .header__title {
     margin-bottom: 40px; }
   .header__subtitle {
@@ -784,22 +787,25 @@ body {
     max-width: 300px;
     color: #535565;
     font-size: 1.8rem; }
-  .achievement:hover:after, .achievement:focus:after, .achievement:active:after {
-    opacity: 1; }
-  .achievement:hover .achievement__text,
-  .achievement:hover .achievement__number, .achievement:focus .achievement__text,
-  .achievement:focus .achievement__number, .achievement:active .achievement__text,
-  .achievement:active .achievement__number {
-    color: #fff; }
-  .achievement:hover .achievement__icon_mentor, .achievement:focus .achievement__icon_mentor, .achievement:active .achievement__icon_mentor {
-    background-image: url(../img/icons/mentor_dark.png); }
-  .achievement:hover .achievement__icon_building, .achievement:focus .achievement__icon_building, .achievement:active .achievement__icon_building {
-    background-image: url(../img/icons/building_dark.png); }
-  .achievement:hover .achievement__icon_world, .achievement:focus .achievement__icon_world, .achievement:active .achievement__icon_world {
-    background-image: url(../img/icons/world_dark.png); }
+  .achievement:hover, .achievement:focus, .achievement:active {
+    text-decoration: none; }
+    .achievement:hover:after, .achievement:focus:after, .achievement:active:after {
+      opacity: 1; }
+    .achievement:hover .achievement__text,
+    .achievement:hover .achievement__number, .achievement:focus .achievement__text,
+    .achievement:focus .achievement__number, .achievement:active .achievement__text,
+    .achievement:active .achievement__number {
+      color: #fff; }
+    .achievement:hover .achievement__icon_mentor, .achievement:focus .achievement__icon_mentor, .achievement:active .achievement__icon_mentor {
+      background-image: url(../img/icons/mentor_dark.png); }
+    .achievement:hover .achievement__icon_building, .achievement:focus .achievement__icon_building, .achievement:active .achievement__icon_building {
+      background-image: url(../img/icons/building_dark.png); }
+    .achievement:hover .achievement__icon_world, .achievement:focus .achievement__icon_world, .achievement:active .achievement__icon_world {
+      background-image: url(../img/icons/world_dark.png); }
 
 .chouse {
-  padding-bottom: 200px; }
+  padding-bottom: 200px;
+  position: relative; }
   .chouse__title {
     background-image: url(../img/courses__title_bg.jpg);
     background-size: cover;
@@ -824,6 +830,14 @@ body {
       position: absolute;
       left: -50px;
       top: -13px; }
+  .chouse .red-blok_right {
+    right: -71%;
+    top: -50%;
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+    z-index: -1; }
 
 .courses {
   display: -webkit-box;
@@ -953,71 +967,78 @@ body {
     -o-transform: translateX(-50%);
     transform: translateX(-50%); }
 
-.speaker__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-
-.speaker__photo {
-  width: 540px;
-  height: 840px;
-  margin-left: 65px; }
-  .speaker__photo img {
-    width: 100%;
-    height: 100%; }
-
-.speaker__about {
-  max-width: 735px; }
-
-.speaker__title {
-  margin-top: 32px;
-  margin-bottom: 56px; }
-
-.speaker__name {
-  font-family: inherit;
-  font-size: 3.2rem;
-  color: #fff;
-  font-weight: 600;
-  line-height: 130%;
-  background-image: -webkit-gradient(linear, right top, left top, from(#176DC0), to(#003161));
-  background-image: -o-linear-gradient(right, #176DC0, #003161);
-  background-image: linear-gradient(270deg, #176DC0, #003161);
-  width: 735px;
-  padding: 21px 0 30px 32px;
+.speaker {
   position: relative;
-  margin-bottom: 40px; }
-  .speaker__name:after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -19px;
-    left: 0;
-    border-top: 19px solid #003161;
-    border-right: 18px solid transparent; }
-
-.speaker__achievements {
-  padding: 0;
-  list-style: none; }
-
-.speaker__achievement {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-bottom: 16px;
-  font-family: inherit;
-  font-size: 1.8rem;
-  color: #535565;
-  font-weight: 400;
-  line-height: 130%; }
-
-.speaker__icon {
-  padding-right: 15px; }
+  padding-top: 95px; }
+  .speaker__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .speaker__photo {
+    width: 540px;
+    height: 840px;
+    margin-left: 65px; }
+    .speaker__photo img {
+      width: 100%;
+      height: 100%; }
+  .speaker__about {
+    max-width: 735px; }
+  .speaker__title {
+    margin-top: 32px;
+    margin-bottom: 56px; }
+  .speaker__name {
+    font-family: inherit;
+    font-size: 3.2rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 130%;
+    background-image: -webkit-gradient(linear, right top, left top, from(#176DC0), to(#003161));
+    background-image: -o-linear-gradient(right, #176DC0, #003161);
+    background-image: linear-gradient(270deg, #176DC0, #003161);
+    width: 735px;
+    padding: 21px 0 30px 32px;
+    position: relative;
+    margin-bottom: 40px; }
+    .speaker__name:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -19px;
+      left: 0;
+      border-top: 19px solid #003161;
+      border-right: 18px solid transparent; }
+  .speaker__achievements {
+    padding: 0;
+    list-style: none; }
+  .speaker__achievement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 16px;
+    font-family: inherit;
+    font-size: 1.8rem;
+    color: #535565;
+    font-weight: 400;
+    line-height: 130%; }
+  .speaker__icon {
+    padding-right: 15px; }
+  .speaker .red-blok_left {
+    width: 306px;
+    height: 1100px;
+    border: none;
+    background-color: #F5F8FE;
+    top: -4%;
+    left: 8%;
+    z-index: -1; }
+    .speaker .red-blok_left::after {
+      top: 40px;
+      left: 50px; }
 
 .companys__title {
   background-image: url(../img/courses__title_bg.jpg);
@@ -1147,7 +1168,7 @@ body {
       content: "";
       display: block;
       position: absolute;
-      width: 228px;
+      width: 231px;
       height: 31px;
       bottom: 0;
       left: 50%;
@@ -1360,7 +1381,8 @@ body {
     -o-transition: all .4s ease;
     transition: all .4s ease; }
     #commentsSlider .slick-arrow:hover, #commentsSlider .slick-arrow:focus, #commentsSlider .slick-arrow:active {
-      background-color: #F5F8FE; }
+      background-color: #F5F8FE;
+      outline: none; }
   #commentsSlider .slick-prev {
     left: 9%;
     background-image: url(../img/icons/arrow_left.png);
@@ -1456,6 +1478,12 @@ body {
       padding-bottom: 15px; }
   #screenshotsThumbler .slick-list {
     overflow: visible; }
+  #screenshotsThumbler .slick-slide {
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease; }
+    #screenshotsThumbler .slick-slide:hover, #screenshotsThumbler .slick-slide:focus, #screenshotsThumbler .slick-slide:active {
+      outline: none; }
 
 #screenshotsSlider {
   width: 100%;
@@ -1537,7 +1565,8 @@ body {
           -o-transition: all .4s ease;
           transition: all .4s ease; }
           #screenshotsSlider + .pagination .slick-dots li button:hover, #screenshotsSlider + .pagination .slick-dots li button:focus, #screenshotsSlider + .pagination .slick-dots li button:active {
-            cursor: pointer; }
+            cursor: pointer;
+            outline: none; }
         #screenshotsSlider + .pagination .slick-dots li.slick-active button {
           background-color: #E43137; }
       #screenshotsSlider + .pagination .pagination__buttons {
@@ -1557,7 +1586,8 @@ body {
           -o-transition: all .4s ease;
           transition: all .4s ease; }
           #screenshotsSlider + .pagination .pagination__buttons .slick-arrow:hover, #screenshotsSlider + .pagination .pagination__buttons .slick-arrow:focus, #screenshotsSlider + .pagination .pagination__buttons .slick-arrow:active {
-            cursor: pointer; }
+            cursor: pointer;
+            outline: none; }
         #screenshotsSlider + .pagination .pagination__buttons .slick-prev {
           background-image: url(../img/icons/arrow_left_dark.png);
           margin-right: 5px;
@@ -1648,7 +1678,12 @@ body {
     right: -20px;
     opacity: 1;
     color: #fff;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease; }
+    #application .modal-content .close:hover, #application .modal-content .close:focus, #application .modal-content .close:active {
+      outline: none; }
   #application .modal-content .modal-body {
     padding: 0;
     font-family: inherit;

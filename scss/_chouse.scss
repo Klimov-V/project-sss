@@ -1,5 +1,6 @@
 .chouse {
     padding-bottom: 200px;
+    position: relative;
 
     &__title {
         background-image: url(../img/courses__title_bg.jpg);
@@ -25,6 +26,13 @@
             left: -50px;
             top: -13px;
         }
+    }
+
+    & .red-blok_right {
+        right: -71%;
+        top: -50%;
+        transform: rotate(60deg);
+        z-index: -1;
     }
 
 }

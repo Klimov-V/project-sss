@@ -1,4 +1,6 @@
 .speaker {
+    position: relative;
+    padding-top: 95px;
 
     &__container {
         display: flex;
@@ -53,5 +55,20 @@
     }
     &__icon {
         padding-right: 15px;
+    }
+
+    & .red-blok_left {
+        width: 306px;
+        height: 1100px;
+        border: none;
+        background-color: #F5F8FE;
+        top: -4%;
+        left: 8%;
+        z-index: -1;
+
+        &::after {
+            top: 40px;
+            left: 50px;
+        }
     }
 }
