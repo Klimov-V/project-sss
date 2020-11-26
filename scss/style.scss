@@ -33,7 +33,7 @@ body {
 
   &_line {
     position: relative;
-    padding-left: 130px;
+    padding-left: 45px;
 
     &::before {
       content: "";
@@ -42,14 +42,14 @@ body {
       left: 0;
       top: 50%;
       background-color: #E43137;
-      width: 96px;
+      width: 32px;
       height: $border-width;
     }
   }
 }
 
 .btn {
-  @include font($fz: 2rem, $fc: $white, $fw: 500);
+  @include font($fz: 1.6rem, $fc: $white, $fw: 500);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -57,9 +57,9 @@ body {
   background-size: 200%;
   box-shadow: 0px 15px 30px rgba(8, 114, 201, 0.25);
   border-radius: 40px;
-  padding: .6em 3.35em .6em 1.6em;
+  padding: 12px 60px 12px 30px;
   position: relative;
-  height: 56px;
+  height: 48px;
 
   @include hover {
     background-position-x: right;
@@ -73,8 +73,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
-    width: 46px;
-    height: 46px;
+    width: 38px;
+    height: 38px;
     margin-right: 5px;
     text-align: center;
     position: absolute;
@@ -136,6 +136,14 @@ body {
   .section__title {
     font-size: 3rem;
     white-space: nowrap;
+
+    &_line {
+      padding-left: 75px;
+
+      &::before{
+        width: 56px;
+      }
+    }
   }
 }
 @media screen and (min-width: 992px) {
@@ -150,6 +158,16 @@ body {
   .container {
     padding: 0 15px;
   } 
+  .section__title {
+
+    &_line {
+      padding-left: 130px;
+
+      &::before{
+        width: 96px;
+      }
+    }
+  }
 }
 @media screen and (min-width: 1200px) {
   .section__title {

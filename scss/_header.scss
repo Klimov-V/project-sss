@@ -1,7 +1,7 @@
 .header {
-    border-bottom: $border-width dashed $border-color;
+    // border-bottom: $border-width dashed $border-color;
     position: relative;
-    margin-bottom: 220px;
+    margin-bottom: 140px;
 
     &__content {
         background-image: url(../img/header_mobile_bg.jpg); 
@@ -111,6 +111,18 @@
     justify-content: center;
     margin-bottom: -120px;
     flex-direction: column;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        height: 80%;
+        border-left: $border-width dashed $border-color;
+        border-top: $border-width dashed $border-color;
+        position: absolute;
+        top: 10%;
+        left: 50%
+    }
 }
 .achievement {
     position: relative;
@@ -297,6 +309,13 @@
     }
     .achievements {
         flex-direction: row;
+
+        &::before {
+            height: 0;
+            width: 100%;
+            top: 50%;
+            left: 0;
+        }
     }
     .achievement {
         width: 478px;
