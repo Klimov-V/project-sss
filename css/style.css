@@ -401,12 +401,13 @@ body {
 
 .section__title {
   font-family: "Jost", sans-serif;
-  font-size: 4.8rem;
+  font-size: 3rem;
   color: #111;
   font-weight: 600;
   line-height: 130%;
   margin-top: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  white-space: nowrap; }
   .section__title_lite {
     color: #fff; }
   .section__title_line {
@@ -515,6 +516,19 @@ body {
     -o-transform: rotate(60deg);
     transform: rotate(60deg);
     z-index: 5; }
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 4.8rem; } }
+
+@media screen and (min-width: 1920px) {
+  .section__title_line {
+    padding-left: 130px; }
+    .section__title_line::before {
+      left: 0;
+      top: 50%;
+      width: 96px;
+      height: 2px; } }
 
 .icon {
   color: #E5E5E5;
@@ -633,7 +647,7 @@ body {
   margin-bottom: 220px; }
   .header__content {
     background-image: url(../img/header_bg.jpg);
-    background-size: 98% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
     height: 632px;
@@ -802,6 +816,10 @@ body {
       background-image: url(../img/icons/building_dark.png); }
     .achievement:hover .achievement__icon_world, .achievement:focus .achievement__icon_world, .achievement:active .achievement__icon_world {
       background-image: url(../img/icons/world_dark.png); }
+
+@media screen and (min-width: 1920px) {
+  .header__content {
+    background-size: 98% 100%; } }
 
 .chouse {
   padding-bottom: 200px;

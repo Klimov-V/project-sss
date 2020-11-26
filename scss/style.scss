@@ -23,9 +23,10 @@ body {
 }  
 
 .section__title {
-  @include font($ff: $body-ff, $fz: 4.8rem, $fc: $dark, $fw: 600, $lh: 130%);
+  @include font($ff: $body-ff, $fz: 3rem, $fc: $dark, $fw: 600, $lh: 130%);
   margin-top: 0;
   margin-bottom: 0;
+  white-space: nowrap;
 
   &_lite {
     color: $white;
@@ -126,6 +127,32 @@ body {
   }
 }
 
+
+@media screen and (min-width: 576px) {}
+@media screen and (min-width: 768px) {}
+@media screen and (min-width: 992px) {}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 4.8rem;
+  }
+}
+@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1920px) {
+  .section__title {
+    // font-size: 4.8rem;
+  
+    &_line {
+      padding-left: 130px;
+  
+      &::before {
+        left: 0;
+        top: 50%;
+        width: 96px;
+        height: $border-width;
+      }
+    }
+  }
+}
 
 
 

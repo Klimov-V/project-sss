@@ -5,7 +5,7 @@
 
     &__content {
         background-image: url(../img/header_bg.jpg);
-        background-size: 98% 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: right;
         height: 632px;
@@ -188,6 +188,20 @@
         }
         .achievement__icon_world {
             background-image: url(../img/icons/world_dark.png);
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {}
+@media screen and (min-width: 768px) {}
+@media screen and (min-width: 992px) {}
+@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1920px) {
+    .header {
+        
+        &__content {
+            background-size: 98% 100%;
         }
     }
 }
