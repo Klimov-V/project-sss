@@ -10,7 +10,7 @@ function setupVideo(video) {
     const link = video.querySelector('.video__link');
     const media = video.querySelector('.video__media');
     const button = video.querySelector('.video__button');
-    const id = 'jNOra2RoyWY';
+    const id = 'OifU7-VL2fY';
 
     video.addEventListener('click', () => {
         let iframe = createIframe(id);

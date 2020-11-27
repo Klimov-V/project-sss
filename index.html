@@ -273,9 +273,18 @@
         <div class="red-blok_wrapper wow fadeInBottomLeft">
             <div class="red-blok red-blok_left"></div>
         </div>
+        
+        <div class="container">
+            <h2 class="speaker__title section__title section__title_line">О тренере</h2>
+        </div>
+
         <div class="container speaker__container">
             <div class="speaker__photo wow fadeInLeft">
-                <img src="./img/speaker__photo.png" alt="Сергей Стужук">
+                <picture>
+                    <source media="(max-width: 767px" srcset="./img/speaker__photo_mobile.png">
+                    <source media="(min-width: 768px" srcset="./img/speaker__photo.png">
+                    <img src="./img/speaker__photo.png" alt="Сергей Стужук">
+                </picture>
             </div>
             <div class="speaker__about wow fadeInRight">
                 <h2 class="speaker__title section__title section__title_line">О тренере</h2>
@@ -335,6 +344,7 @@
     <section class="companys">
         <div class="companys__title">
             <div class="container">
+                <h2 class="section__title section__title_mobile section__title_line wow fadeInLeft">Наши клиенты</h2>
                 <h2 class="section__title section__title_line wow fadeInLeft">Компании и организации, которые проходили курсы</h2>
             </div>
         </div>

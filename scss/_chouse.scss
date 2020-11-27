@@ -1,5 +1,5 @@
 .chouse {
-    padding-bottom: 200px;
+    padding-bottom: 40px;
     position: relative;
 
     &__title {
@@ -39,6 +39,7 @@
 .courses {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .course {
     width: 288px;
@@ -66,7 +67,7 @@
 
     &__title {
         margin: 0;
-        width: 256px;
+        width: calc(100% - 32px);
         height: 72px;
         background-image: linear-gradient(270deg, $blue, $primary-color);
         position: absolute;
@@ -110,39 +111,39 @@
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         height: 200px;
+        padding: 0 40px;
 
         &:before,
         &:after {
             content: "";
             position: absolute;
-            width: 56px;
-            height: 56px;
+            width: 32px;
+            height: 32px;
             border-radius: 100px;
             top: 50%;
+            transform: translateY(-50%);
         }
         &:before {
-            left: -28px;
+            left: -16px;
             box-shadow: inset -25px 0 40px rgba(3, 70, 136, 0.1);
         }
         &:after {
-            right: -28px;
+            right: -16px;
             box-shadow: inset 25px 0 40px rgba(3, 70, 136, 0.1);
         }
     }
     &__price {
-        margin-top: 25px;
         @include font($fz: 2.4rem, $fc: $primary-color, $fw: 600);
     }
     &__notice {
         @include font($fz: 1.4rem, $fc: #111);
-        margin: 10px auto 0;
         max-width: 315px;
+        order: 1;
     }
     &__btn {
-        bottom: -28px;
-        left: 50%;
-        transform: translateX(-50%);
+        margin: 10px 0 15px;
     }
 }
 
@@ -189,8 +190,10 @@
     .courses {
         flex-direction: row;
         justify-content: space-between;
+        margin-top: -160px;
     }
     .chouse {
+        padding-bottom: 160px;
         &__title {
             padding: 100px 0 245px;
             &__arrow {
@@ -200,8 +203,31 @@
     }
     .course {
         width: 480px;
+
+        &__discription {
+            height: 550px;
+        }
+        &:first-of-type {
+            margin-top: 0;
+        }
+        &:not(:first-of-type) {
+            margin-top: 0;
+        }
         &__title {
             width: 416px;
+        }
+        &__bottom {
+            &:before,
+            &:after {
+                width: 56px;
+                height: 56px;
+            }
+            &:before {
+                left: -28px;
+            }
+            &:after {
+                right: -28px;
+            }
         }
     }
 }
@@ -211,7 +237,6 @@
     .chouse {
         &__title {
             max-width: 98%;
-            
         }
     }
     .course {

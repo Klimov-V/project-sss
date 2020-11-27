@@ -7,6 +7,7 @@
     
     &__container {
         display: flex;
+        padding: 0;
     }
     &__title {
         text-transform: uppercase;
@@ -21,13 +22,13 @@
 #screenshotsThumbler {
     max-width: 780px;
     height: 616px;
-    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin-top: 55px;
 
     & .slide-tab {
         @include font($fz: 2.4rem, $fc:$white, $fw: 600);
         margin-bottom: 24px;
-        padding-left: 90px;
-
+        padding-top: 33px;
     }
     & .slide-content {
         @include font($fz: 1.8rem, $fc:$white);
@@ -44,6 +45,9 @@
         @include hover {
             outline: none;
         }
+    }
+    & .slick-track {
+        // display: flex;
     }
 }
 
@@ -74,7 +78,7 @@
 #screenshotsThumbler .slick-slide {
 	position: relative;
 	float: none;
-	width: 100%!important;
+	width: 644px !important;
 	margin-bottom: 15px;
 }
 
@@ -87,6 +91,30 @@
 }
 
 
+
+
+
+@media screen and (min-width: 576px) {}
+@media screen and (min-width: 768px) {
+    .sss {
+        &__container {
+            padding: 0 15px;
+        }
+    }
+    #screenshotsThumbler {
+        border-left: 1px solid rgba(255, 255, 255, 0.15);
+        border-top: none;
+        margin-top: 0;
+        & .slick-track {
+            flex-direction: column;
+        }
+        & .slide-tab {
+            font-size: 2.4rem;
+            margin-bottom: 24px;
+            padding-left: 90px;
+        }
+    }
+}
 @media screen and (min-width: 992px) {
     #screenshotsSlider {
         padding: 0;
@@ -229,17 +257,7 @@
         }
     }
 
-    
-
-    
-  
-   
 }
-
-
-@media screen and (min-width: 576px) {}
-@media screen and (min-width: 768px) {}
-@media screen and (min-width: 992px) {}
 @media screen and (min-width: 1200px) {}
 @media screen and (min-width: 1440px) {}
 @media screen and (min-width: 1920px) {}

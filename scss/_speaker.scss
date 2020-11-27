@@ -1,15 +1,17 @@
 .speaker {
     position: relative;
-    padding-top: 95px;
+    padding-top: 40px;
 
     &__container {
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
     }
     &__photo {
-        width: 540px;
-        height: 840px;
-        margin-left: 65px;
+        width: 145px;
+        height: 200px;
+        align-self: flex-end;
+        margin-top: -30px;
 
         & img {
             width: 100%;
@@ -18,27 +20,32 @@
     }
     &__about {
         max-width: 735px; 
+
+        & .speaker__title {
+            display: none;
+        }
     }
     &__title {
-        margin-top: 32px;
-        margin-bottom: 56px;
+        // margin-top: 32px;
+        // margin-bottom: 56px;
     }
     &__discription {}
     &__name {
-        @include font($fz: 3.2rem, $fc: $white, $fw: 600);
+        @include font($fz: 1.8rem, $fc: $white, $fw: 600);
         background-image: linear-gradient(270deg, $blue, $primary-color);
-        width: 735px;
-        padding: 21px 0 30px 32px;
+        width: 288px;
+        padding: 16px;
         position: relative;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
+        margin-top: -20px;
 
         &:after {
             content: "";
             display: block;
             position: absolute;
-            bottom: -19px;
+            bottom: -16px;
             left: 0;
-            border-top: 19px solid $primary-color;
+            border-top: 16px solid $primary-color;
             border-right: 18px solid transparent;
 
         }
@@ -49,33 +56,83 @@
     }
     &__achievement {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         padding-bottom: 16px;
-        @include font($fz: 1.8rem, $fc: $dark-gray);
+        @include font($fz: 1.6rem, $fc: $dark-gray);
     }
     &__icon {
         padding-right: 15px;
     }
 
     & .red-blok_left {
-        width: 306px;
-        height: 1100px;
+        width: 85px;
+        height: 310px;
         border: none;
         background-color: #F5F8FE;
-        top: -4%;
-        left: 8%;
+        top: 3%;
+        left: 0%;
         z-index: -1;
 
         &::after {
-            top: 40px;
-            left: 50px;
+            top: 15px;
+            left: 15px;
         }
     }
 }
 
 @media screen and (min-width: 576px) {}
 @media screen and (min-width: 768px) {}
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    .speaker {
+        padding-top: 95px;
+        &__container {
+            flex-direction: row;
+        }
+        &__title {
+            display: none;
+        }
+        &__about {
+            max-width: 735px; 
+    
+            & .speaker__title {
+                display: block;
+                margin-top: 32px;
+                margin-bottom: 56px;
+            }
+        }
+        &__photo {
+            width: 540px;
+            height: 840px;
+            margin-left: 65px;
+        }
+        &__name {
+            font-size: 3.2rem;
+            width: 735px;
+            padding: 21px 0 30px 32px;
+            margin-top: 0;
+            margin-bottom: 40px;
+
+            &:after {
+                bottom: -19px;
+                border-top-width: 19px;
+            }
+        }
+        & .red-blok_left {
+            width: 306px;
+            height: 1100px;
+            top: -4%;
+            left: 8%;
+            &::after {
+                top: 40px;
+                left: 50px;
+            }
+        }
+        &__achievement {
+            font-size: 1.8rem;
+            align-items: center;
+        }
+    }
+}
 @media screen and (min-width: 1200px) {}
 @media screen and (min-width: 1440px) {}
 @media screen and (min-width: 1920px) {}
