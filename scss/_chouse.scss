@@ -78,9 +78,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0 20px;
+        grid-area: t;
     }
     &__discription {
         padding: 75px 15px 0;
+        grid-area: d;
 
         .discription {
             &__part {
@@ -104,6 +107,9 @@
             }
         }
     }
+    & .btn {
+        display: none;
+    }
     &__bottom {
         border-top: $border-width dashed $border-color;
         text-align: center;
@@ -114,6 +120,7 @@
         justify-content: center;
         height: 200px;
         padding: 0 40px;
+        grid-area: b;
 
         &:before,
         &:after {
@@ -133,6 +140,11 @@
             right: -16px;
             box-shadow: inset 25px 0 40px rgba(3, 70, 136, 0.1);
         }
+        & .btn {
+            margin: 10px 0 15px;
+            display: inline-flex;
+        }
+        
     }
     &__price {
         @include font($fz: 2.4rem, $fc: $primary-color, $fw: 600);
@@ -141,9 +153,9 @@
         @include font($fz: 1.4rem, $fc: #111);
         max-width: 315px;
         order: 1;
-    }
-    &__btn {
-        margin: 10px 0 15px;
+        &_tablet {
+            display: none;
+        }
     }
 }
 
@@ -156,7 +168,7 @@
         }
     }
     .course {
-        width: 480px;
+        
         &__title {
 
         }
@@ -164,29 +176,78 @@
 }
 @media screen and (min-width: 768px) {
     .course {
-        width: 480px;
+        width: 720px;
         margin-top: -110px;
+        display: grid;
+        grid-template-columns: 475px 245px;
+        grid-template-areas: 
+            "t b"
+            "d b";
         
-        &__title {
-            
+        &:before {
+            width: 491px;
         }
-    }
-    .course {
-        margin-top: 0;
+        &__title {
+            width: 100%;
+            left: 0;
+        }
         &__discription {
         
             .discription {
-                &__excess {
-                    display: inline;
-                    &_mobile {
-                        display: none;
-                    }
-                }
+                
+            }
+        }
+        &__bottom {
+            border-top: 0;
+            height: 100%;
+            border-left: $border-width dashed $border-color;
+            padding: 0 22px;
+            &:before,
+            &:after {
+                width: 40px;
+                height: 40px;
+                top: auto;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+            &:before {
+                top: -20px;
+                box-shadow: inset -25px 0 40px rgba(3, 70, 136, 0.1);
+            }
+            &:after {
+                bottom: -20px;
+                box-shadow: inset 25px 0 40px rgba(3, 70, 136, 0.1);
+            }
+        }
+        &__notice {
+            text-align: left;
+            order: 0;
+            &_tablet {
+                display: block;
+                width: 170px;
+                margin: 16px auto 0;  
+            }
+            &_regular {
+                display: none;
             }
         }
     }
 }
 @media screen and (min-width: 992px) {
+    .course { 
+        &__bottom {
+            & .btn {
+                font-size: 1.6rem;
+                height: 48px;
+                & span {
+                width: 38px;
+                height: 38px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
     .courses {
         flex-direction: row;
         justify-content: space-between;
@@ -202,10 +263,52 @@
         }
     }
     .course {
-        width: 480px;
+        width: 360px;
+        display: block;
+        & .btn {
+            display: inline-flex;
+            position: absolute;
+            left: 50%;
+            bottom: -28px;
+            transform: translateX(-50%);
+            width: 237px;
+        }
+
+        &::before {
+            width: 100%;
+            border-bottom: 24px solid $dark-blue;
+            border-left: 32px solid transparent;
+            border-right: 32px solid transparent;
+            top: -24px;
+        }
 
         &__discription {
             height: 550px;
+            padding: 75px 30px 0;
+        
+            .discription {
+                &__title {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+                &__title:last-of-type {
+                    display: inline-flex;
+                }
+                &__excess {
+                    display: inline;
+                    &_mobile {
+                        display: none;
+                    }
+                }
+                &__part:last-of-type {
+                    display: flex;
+                    & .discription__title {
+                        margin-right: 8px;
+                    }
+                }
+            }
+            
         }
         &:first-of-type {
             margin-top: 0;
@@ -214,13 +317,21 @@
             margin-top: 0;
         }
         &__title {
-            width: 416px;
+            width: calc(100% - 64px);
+            left: 32px;
+            top: -24px;
         }
         &__bottom {
+            border-top: $border-width dashed $border-color;
+            border-left: 0;
+            padding: 0 40px;
             &:before,
             &:after {
                 width: 56px;
                 height: 56px;
+                top: 50%;
+                left: auto;
+                transform: translate(0, -50%);
             }
             &:before {
                 left: -28px;
@@ -228,11 +339,39 @@
             &:after {
                 right: -28px;
             }
+            & .btn {
+                display: none;
+            }
+        }
+        &__price {
+            font-size: 4.8rem;
+            margin-top: 20px;
+        }
+        &__notice {
+            text-align: left;
+            &_tablet {
+                display: none;
+            }
+            &_regular {
+                display: block;
+                text-align: center;
+                margin-bottom: 60px;
+            }
         }
     }
 }
-@media screen and (min-width: 1200px) {}
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1440px) {
+    .course {
+        width: 420px;
+        &__title {
+            font-size: 2.6rem;
+            height: 128px;
+        }
+        &__discription {
+            padding: 136px 32px 0;
+        }
+    }
+}
 @media screen and (min-width: 1920px) {
     .chouse {
         &__title {
@@ -251,15 +390,13 @@
         }
 
         &__title {
-            width: 416px;
             height: 128px;
             top: -24px;
             left: 32px;
+            padding: 0 30px;
             @include font($fz: 2.6rem, $fc: $white, $fw: 600);
         }
         &__discription {
-            padding: 136px 32px 0;
-            height: 550px;
             &__part {
                 &:last-of-type {
                     .discription__title {

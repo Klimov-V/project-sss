@@ -30,11 +30,10 @@
         max-width: 240px;
     }
     &__subtitle {
+        @include font ($fz: 1.6rem, $fc: $dark-gray);
         max-width: 305px;
         padding-left: 15px;
         position: relative;
-        color: $dark-gray;
-        font-size: 1.6rem;
         margin-bottom: 25px;
 
         & p:last-of-type {
@@ -83,7 +82,7 @@
             }
         }
         &_right {
-            width: 110px;
+            width: 100px;
             height: 390px;
             top: 294px;
             right: -155px;
@@ -281,6 +280,7 @@
             max-width: 257px;
             height: 385px;
             bottom: 25px;
+            margin: 0;
         }
         &__title {
             margin-bottom: 24px;
@@ -302,8 +302,8 @@
             &_right {
                 width: 182px;
                 height: 653px;
-                bottom: 150px;
-                right: -420px;
+                top: -75px;
+                right: -410px;
             }
         }
     }
@@ -319,8 +319,11 @@
     }
     .achievement {
         width: 478px;
-        margin: 0 15px;
         padding: 20px 5px;
+
+        &:not(:last-of-type) {
+            margin-right: 30px;
+        }
 
         &__text {
             // font-size: 1.6rem;
@@ -370,8 +373,8 @@
                 
             }
             &_right {
-                right: -355px;
-                bottom: 115px;
+                right: -300px;
+                top: -40px;
             }
         }
     }
@@ -401,11 +404,11 @@
 @media screen and (min-width: 1200px) {
     .header {
         &__content {
-            height: 632px;
+            height: 470px;
         }
         &__photo {
             max-width: 480px;
-            height: 720px;
+            height: 560px;
             bottom: 45px;
         }
         &__title {
@@ -417,6 +420,16 @@
             padding-left: 30px;
             margin-bottom: 35px;
         }
+        & .red-blok {
+            &_left {
+                
+            }
+            &_right {
+                right: -230px;
+                top: 20px;
+                height: 800px;
+            }
+        }
     }
 }
 @media screen and (min-width: 1440px) {
@@ -424,11 +437,26 @@
         &__content {
             height: 632px;
         }
+        &__photo {
+            height: 680px;
+            bottom: 25px;
+        }
         &__title {
             margin-bottom: 40px;
         }
         &__subtitle {
             max-width: 545px;
+        }
+        & .red-blok {
+            &_left {
+                
+            }
+            &_right {
+                right: -685px;
+                top: -190px;
+                width: 250px;
+                height: 1400px;
+            }
         }
     }
 }
@@ -443,6 +471,21 @@
         }
         &__subtitle {
             max-width: 545px;
+        }
+        &__photo {
+            height: 720px;
+            bottom: 45px;
+        }
+        & .red-blok {
+            &_left {
+                
+            }
+            &_right {
+                top: -16%;
+                right: -30%;
+                width: 390px;
+                height: 1400px;
+            }
         }
     }
 }

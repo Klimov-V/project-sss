@@ -16,11 +16,11 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1536px;
-  padding: 0 15px;
-}  
+// .container {
+//   margin: 0 auto;
+//   max-width: 1536px;
+//   padding: 0 15px;
+// }  
 
 .section__title {
   @include font($ff: $body-ff, $fz: 2.4rem, $fc: $dark, $fw: 600, $lh: 130%);
@@ -131,7 +131,7 @@ body {
     }
   }
   .container {
-    padding: 0 25px;
+    max-width: 750px;
   } 
   .section__title {
     font-size: 3rem;
@@ -157,6 +157,7 @@ body {
   }
   .container {
     padding: 0 15px;
+    max-width: 960px;
   } 
   .section__title {
 
@@ -173,7 +174,9 @@ body {
   .section__title {
     font-size: 4.8rem;
   }
-  
+  .container {
+    max-width: 1140px;
+  } 
 }
 @media screen and (min-width: 1440px) {
   .red-blok {
@@ -182,8 +185,14 @@ body {
       height: 1400px;
     }
   }
+  .container {
+    max-width: 1360px;
+  } 
 }
 @media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1536px;
+  }
   .section__title {
   
     &_line {
