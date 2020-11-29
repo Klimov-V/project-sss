@@ -17,6 +17,24 @@ $(document).ready(function(){
             }
         }]
     });
+
+    if ($(window).width() < 768 ) {
+        $('#companysSlider').slick({
+            // autoplay: true,
+            autoplaySpeed: 5e3,
+            centerMode: true,
+            respondTo: "min",
+            centerPadding: "10%",
+            slidesToShow: 1,
+            focusOnSelect: !0,
+            variableWidth: true,
+            arrows: false,
+            swipe: !0,
+        });
+    } else {
+        $('#companysSlider').attr('id', '');
+    }
+
     $("#screenshotsSlider").slick({
         // autoplay: !0,
         autoplaySpeed: 3e3,
@@ -52,3 +70,9 @@ $(document).ready(function(){
         
     })
 });
+
+function togglerHeightToSlide (e) {
+  e.stopPropagation(), 
+  $(this).parent(".comment-content-text").toggleClass("open"), 
+  $(this).closest(".slick-list").height("auto")
+}

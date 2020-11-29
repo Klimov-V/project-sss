@@ -2,10 +2,10 @@
 
     &__title {
         background-image: url(../img/courses__title_bg.jpg);
-        background-size: 98% 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: right;
-        padding: 95px 0 240px;
+        padding: 30px 0 90px;
         & .section__title {
             display: none;
             &_mobile {
@@ -16,9 +16,9 @@
     &__container {
         box-shadow: 0px 10px 80px rgba(3, 70, 136, 0.1);
         background-color: $white;
-        margin: -184px auto 95px;
+        margin: -60px auto 40px;
         position: relative;
-        padding: 40px 32px;
+        padding: 40px 0;
         width: 100%;
         list-style: none;
         display: flex;
@@ -27,25 +27,56 @@
     }
 }
 .company {
-    width: 269px;
-    height: 112px;
-    margin-bottom: 30px;
+    width: 120px;
+    height: 80px;
     display: flex;
     align-items: center;
+    outline: none;
+    margin: 0 8px;
+
+    @include hover {
+        opacity: 1;
+    }
+
+    &.slick-slide {
+        opacity: .5;
+    }
+    &.slick-current {
+        opacity: 1;
+    }
 
     &__logo {
+        max-width: 100%;
+        height: 100%;
+        margin: 0 auto;
         &-wraper {
             margin: 0 auto;
             text-align: center;
+            width: 100%;
+            height: 100%;
         }
-        
-        max-width: 100%;
     }
 }
 
 
+
 @media screen and (min-width: 576px) {}
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .company {
+        opacity: 1;
+        margin-bottom: 30px;
+        width: 125px;
+    }
+    .companys {
+
+        &__title {
+            padding: 48px 0 200px;
+        }
+        &__container {
+            margin: -168px auto 48px;
+        }
+    }
+}
 @media screen and (min-width: 992px) {
     .companys {
         &__title {
@@ -58,8 +89,54 @@
                 }
             }
         }
+        &__container {
+            padding: 40px 0 0;
+        }
+    }
+    .company {
+        width: 170px;
+        height: 95px;
     }
 }
-@media screen and (min-width: 1200px) {}
-@media screen and (min-width: 1440px) {}
-@media screen and (min-width: 1920px) {}
+@media screen and (min-width: 1200px) {
+    .companys {
+        &__title {
+
+            & .section__title {
+                font-size: 3.9rem;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    .company {
+        width: 265px;
+        height: 110px;
+        margin: 0 0 30px;
+    }
+    .companys {
+        &__title {
+
+            & .section__title {
+                font-size: 4.8rem;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1920px) {
+    .companys {
+
+        &__title {
+            background-size: 98% 100%;
+            padding: 95px 0 240px;
+        }
+        &__container {
+            margin: -184px auto 95px;
+            padding: 40px 32px;
+        }
+    }
+    .company {
+        width: 269px;
+        height: 112px;
+    }
+}

@@ -14,13 +14,7 @@ body {
   @include font($ff: $body-ff, $fz: 1.6rem, $fc: $dark, $fw: 400, $lh: 130%);
   background-color: $body-bg;
   overflow-x: hidden;
-}
-
-// .container {
-//   margin: 0 auto;
-//   max-width: 1536px;
-//   padding: 0 15px;
-// }  
+} 
 
 .section__title {
   @include font($ff: $body-ff, $fz: 2.4rem, $fc: $dark, $fw: 600, $lh: 130%);

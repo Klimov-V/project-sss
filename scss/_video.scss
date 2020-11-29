@@ -4,7 +4,7 @@
     &::before {
         content: "";
         display: block;
-        height: 235px;
+        height: 64px;
         position: absolute;
         left: 0;
         right: 0;
@@ -13,7 +13,7 @@
         background-color: #f5f8fe;
     }
     &__container {
-        margin-bottom: 125px;
+        margin-bottom: 65px;
         position: relative;
     }
     &__content {
@@ -31,7 +31,7 @@
         }
         &::after {
             content: "";
-            display: block;
+            display: none;
             position: absolute;
             width: 220px;
             height: 31px;
@@ -55,7 +55,7 @@
         width: 120px;
         height: 120px;
         padding: 0;
-        background-color: $play-btn;
+        background-color: transparent;
         display: none;
         cursor: pointer;
 
@@ -64,6 +64,7 @@
             content: "";
             display: block;
             position: absolute;
+            display: none;
         }
         &::before {
             border-bottom: 40px solid $play-btn;
@@ -81,6 +82,7 @@
             height: 56px;
             border-radius: 50%;
             background-color: $hover;
+            z-index: 10;
 
             &::before {
                 content: "";
@@ -106,24 +108,9 @@
         transform: translate(-50%, -50%);
     }
     &__btn {
-        position: absolute;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 50%);
         z-index: 1;
-
-        // &::before {
-        //     content: "";
-        //     display: block;
-        //     position: absolute;
-        //     width: calc(100% + 6px);
-        //     height: calc(50% + 3px);
-        //     top: -3px;
-        //     left: -3px;
-        //     background-color: $white;
-        //     border-top-left-radius: 50px;
-        //     border-top-right-radius: 50px;
-        //     z-index: -1;
-        // }
     }
 }
 
@@ -142,8 +129,98 @@
 
 
 @media screen and (min-width: 576px) {}
-@media screen and (min-width: 768px) {}
-@media screen and (min-width: 992px) {}
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 768px) {
+    .video {
+        &__container {
+            margin-bottom: 27px;
+        }
+        &::before {
+            height: 120px;
+        }
+        &__content {
+            &::after {
+                width: 196px;
+                height: 27px;
+                display: block;
+            }
+        }
+        &__button {
+            width: 56px;
+            height: 56px;
+            background-color: $play-btn;
+            &::before,
+            &::after {
+                display: block;
+            }
+            &::before {
+                border-bottom-width: 16px;
+                border-right-width: 56px;
+                top: -16px;
+            }
+            &::after {
+                border-top-width: 18px;
+                border-right-width: 56px;
+                bottom: -18px;
+            }
+            &__inner {
+                width: 46px;
+                height: 46px;
+                &::before {
+                    width: 46px;
+                    height: 46px;
+                }
+            }
+        }
+        &__btn {
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .video {
+        &::before {
+            height: 235px;
+        }
+        &__content {
+            &::after {
+                width: 220px;
+                height: 31px;
+            }
+        }
+        &__button {
+            width:120px;
+            height:120px;
+
+            &::before {
+                border-bottom-width: 40px;
+                border-right-width:120px;
+                top: -40px;
+            }
+            &::after {
+                border-top-width: 42px;
+                border-right-width:120px;
+                bottom: -42px;
+            }
+
+            &__inner {
+                width: 56px;
+                height: 56px;
+                &::before {
+                    width: 56px;
+                    height: 56px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .video {
+        &__container {
+            margin-bottom: 70px;
+        }
+    }
+}
 @media screen and (min-width: 1440px) {}
-@media screen and (min-width: 1920px) {}
+@media screen and (min-width: 1920px) {
+    
+}
