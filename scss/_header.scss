@@ -257,6 +257,8 @@
 }
 @media screen and (min-width: 768px) {
     .header {
+        margin-bottom: 195px;
+
         .logo {
             max-width: 195px;
             height: 48px;
@@ -312,9 +314,9 @@
 
         &::before {
             height: 0;
-            width: 100%;
+            width: 140%;
             top: 50%;
-            left: 0;
+            left: -20%;
         }
     }
     .achievement {
@@ -403,6 +405,7 @@
 }
 @media screen and (min-width: 1200px) {
     .header {
+        
         &__content {
             height: 470px;
         }
@@ -422,7 +425,13 @@
         }
         & .red-blok {
             &_left {
-                
+                top: 45%;
+                left: -17%;
+                right: auto;
+                &::after{
+                    top: 10px;
+                    left: 10px;
+                }
             }
             &_right {
                 right: -230px;
@@ -449,7 +458,8 @@
         }
         & .red-blok {
             &_left {
-                
+                top: 45%;
+                left: -15%;
             }
             &_right {
                 right: -685px;
@@ -462,7 +472,7 @@
 }
 @media screen and (min-width: 1920px) {
     .header {
-        
+        // margin-bottom: 195px;
         &__content {
             background-size: 98% 100%;
         }
@@ -478,7 +488,12 @@
         }
         & .red-blok {
             &_left {
-                
+                top: 43%;
+                left: -10%;
+                &::after{
+                    top: 15px;
+                    left: 15px;
+                }
             }
             &_right {
                 top: -16%;

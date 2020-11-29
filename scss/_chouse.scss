@@ -29,8 +29,10 @@
     }
 
     & .red-blok_right {
-        right: -71%;
-        top: -50%;
+        width: 120px;
+        height: 435px;
+        right: -130%;
+        top: -12%;
         transform: rotate(60deg);
         z-index: -1;
     }
@@ -161,20 +163,23 @@
 
 
 @media screen and (min-width: 576px) {
-    
     .chouse {
-        &__title {
-
-        }
-    }
-    .course {
-        
-        &__title {
-
+        & .red-blok_right {
+            right: -71%;
         }
     }
 }
 @media screen and (min-width: 768px) {
+    .chouse {
+        &__arrow {
+            display: block;
+            transform: translate(170%, -21px);
+        }
+        & .red-blok_right {
+            right: -56%;
+            top: -16%;
+        }
+    }
     .course {
         width: 720px;
         margin-top: -110px;
@@ -192,15 +197,12 @@
             left: 0;
         }
         &__discription {
-        
-            .discription {
-                
-            }
+            border-right: $border-width dashed $border-color;
         }
         &__bottom {
             border-top: 0;
             height: 100%;
-            border-left: $border-width dashed $border-color;
+            // border-left: $border-width dashed $border-color;
             padding: 0 22px;
             &:before,
             &:after {
@@ -232,6 +234,7 @@
             }
         }
     }
+
 }
 @media screen and (min-width: 992px) {
     .course { 
@@ -246,6 +249,12 @@
             }
         }
     }
+    .chouse {
+        & .red-blok_right {
+            right: -42%;
+            top: -21%;
+        }
+    }
 }
 @media screen and (min-width: 1200px) {
     .courses {
@@ -257,9 +266,13 @@
         padding-bottom: 160px;
         &__title {
             padding: 100px 0 245px;
-            &__arrow {
-                display: block;
-            }
+        }
+        &__arrow {
+            transform: translate(170%, -31px);
+        }
+        & .red-blok_right {
+            right: -34%;
+            top: -23%;
         }
     }
     .course {
@@ -284,7 +297,8 @@
 
         &__discription {
             height: 550px;
-            padding: 75px 30px 0;
+            padding: 75px 20px 0;
+            border-right: 0;
         
             .discription {
                 &__title {
@@ -323,7 +337,7 @@
         }
         &__bottom {
             border-top: $border-width dashed $border-color;
-            border-left: 0;
+            // border-left: 0;
             padding: 0 40px;
             &:before,
             &:after {
@@ -361,6 +375,12 @@
     }
 }
 @media screen and (min-width: 1440px) {
+    .chouse {
+        & .red-blok_right {
+            top: -23%;
+            right: -28%;
+        }
+    }
     .course {
         width: 420px;
         &__title {
@@ -376,6 +396,12 @@
     .chouse {
         &__title {
             max-width: 98%;
+        }
+        & .red-blok_right {
+            width: 391px;
+            height: 1402px;
+            top: -52%;
+            right: -70%;
         }
     }
     .course {

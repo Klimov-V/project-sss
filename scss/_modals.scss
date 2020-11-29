@@ -1,22 +1,24 @@
-#application {
+#leadership,
+#performance,
+#conversation {
     
     & .modal-content {
         position: relative;
         border: none;
-        padding: 40px 60px;
+        padding: 20px;
         text-align: center;
 
         & .close {
-            width: 40px;
-            height: 40px;
+            width: 24px;
+            height: 24px;
             border-radius: 50%;
-            background-image: linear-gradient(269.98deg, #176DC0 0%, #003161 99.96%);;
+            background-image: linear-gradient(269.98deg, #176DC0 0%, #003161 99.96%);
             position: absolute;
-            top: -20px;
-            right: -20px;
+            top: -12px;
+            right: -12px;
             opacity: 1;
             color: $white;
-            font-size: 1.8rem;
+            font-size: 1.3rem;
 
             @include hover {
                 outline: none;
@@ -24,13 +26,13 @@
         }
         & .modal-body {
             padding: 0;
-            @include font($fz: 1.8rem, $fc: $dark);
+            @include font($fz: 1.6rem, $fc: $dark);
 
             &__img {
-                width: 471px;
-                height: 248px;
+                width: 230px;
+                height: 115px;
                 overflow: hidden;
-                margin-bottom: 40px;
+                margin: 0 auto 20px;
 
                 & img {
                     width: 100%;
@@ -38,12 +40,12 @@
                 }
             }
             &__title {
-                @include font($fz: 2.6rem, $fw: 600);
+                @include font($fz: 2.2rem, $fw: 600);
                 margin-bottom: 5px;
             }
             &__text {
                 color: $dark-gray;
-                margin-bottom: 35px;
+                margin-bottom: 20px;
             }
         }
     }
@@ -72,21 +74,65 @@
             }
         }
     }
-}
-
-
-@media screen and (min-width: 576px) {
-    #application {
-
-        & .modal-dialog {
-            max-width: 610px;
-        }
+    & .modal-dialog {
+        max-width: 290px;
+        margin: 0 auto;
     }
 }
 
 
-@media screen and (min-width: 576px) {}
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 576px) {
+    #leadership,
+    #performance,
+    #conversation  {
+
+        & .modal-dialog {
+            max-width: 500px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #leadership,
+    #performance,
+    #conversation  {
+    
+        & .modal-content {
+            padding: 40px 60px;
+    
+            & .close {
+                width: 40px;
+                height: 40px;
+                top: -20px;
+                right: -20px;
+                font-size: 1.8rem;
+    
+                @include hover {
+                    outline: none;
+                }
+            }
+            & .modal-body {
+                font-size: 1.8rem;
+    
+                &__img {
+                    width: 471px;
+                    height: 248px;
+                    margin-bottom: 40px;
+                }
+                &__title {
+                    margin-bottom: 5px;
+                }
+                &__text {
+                    margin-bottom: 35px;
+                }
+            }
+        }
+        & .modal-dialog {
+            max-width: 610px;
+        }
+       
+    }
+}
 @media screen and (min-width: 992px) {}
 @media screen and (min-width: 1200px) {}
 @media screen and (min-width: 1440px) {}
