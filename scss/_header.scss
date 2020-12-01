@@ -220,6 +220,7 @@
     
     @include hover {
         text-decoration: none;
+        cursor: pointer;
 
         &:after {
             opacity: 1;

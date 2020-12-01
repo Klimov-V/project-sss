@@ -773,7 +773,8 @@ body {
       left: 50%;
       transform: translate(-50%, -50%); }
   .achievement:hover, .achievement:focus, .achievement:active {
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: pointer; }
     .achievement:hover:after, .achievement:focus:after, .achievement:active:after {
       opacity: 1; }
     .achievement:hover .achievement__text,
