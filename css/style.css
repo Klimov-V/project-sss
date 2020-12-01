@@ -355,7 +355,8 @@ body {
   font-weight: 400;
   line-height: 130%;
   background-color: #fff;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
 
 .section__title {
   font-family: "Jost", sans-serif;
@@ -396,7 +397,6 @@ body {
   padding: 12px 60px 12px 30px;
   position: relative;
   height: 48px;
-  scroll-behavior: smooth;
   transition: all .4s ease; }
   .btn:hover, .btn:focus, .btn:active {
     background-position-x: right;
