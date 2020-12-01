@@ -2,7 +2,7 @@ $(document).ready(function(){
     new WOW().init();
 
     $('#commentsSlider').slick({
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 5e3,
         centerMode: true,
         centerPadding: "10%",
@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     if ($(window).width() < 768 ) {
         $('#companysSlider').slick({
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 5e3,
             centerMode: true,
             respondTo: "min",
@@ -31,7 +31,7 @@ $(document).ready(function(){
     }
 
     $("#screenshotsSlider").slick({
-        // autoplay: !0,
+        autoplay: !0,
         autoplaySpeed: 3e3,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -71,5 +71,19 @@ $(document).ready(function(){
     //   $(this).closest(".slick-list").height("auto")
     }
     $('.openText').click(togglerHeightToSlide);
+
+
+    var courses = document.getElementById("courses");
+    var btn = document.querySelectorAll('.scrollToCourses');
+
+    function handleButtonClick(e) {
+        e.preventDefault();
+
+        courses.scrollIntoView({block: "center", behavior: "smooth"});
+    }
+
+    btn.forEach(btn => {
+        btn.addEventListener('click', handleButtonClick);
+    });
 
 });

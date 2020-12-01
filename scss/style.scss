@@ -9,12 +9,12 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 body {
   @include font($ff: $body-ff, $fz: 1.6rem, $fc: $dark, $fw: 400, $lh: 130%);
   background-color: $body-bg;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 } 
 
 .section__title {
