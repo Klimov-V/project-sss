@@ -396,6 +396,7 @@ body {
   padding: 12px 60px 12px 30px;
   position: relative;
   height: 48px;
+  scroll-behavior: smooth;
   transition: all .4s ease; }
   .btn:hover, .btn:focus, .btn:active {
     background-position-x: right;
