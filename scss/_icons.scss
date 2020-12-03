@@ -1,4 +1,4 @@
-$social-size: 48px;
+$social-size: 40px;
 $social-border: 2px;
 
 
@@ -11,7 +11,7 @@ $social-border: 2px;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 20px 20px;
+    background-size: 15px 15px;
 
     @include tr;
     @include hover {
@@ -57,6 +57,13 @@ $social-border: 2px;
 @media screen and (min-width: 576px) {}
 @media screen and (min-width: 768px) {}
 @media screen and (min-width: 992px) {}
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    $social-size: 48px;
+    .icon {
+        background-size: 20px 20px;
+        width: $social-size;
+        height: $social-size;
+    }
+}
 @media screen and (min-width: 1440px) {}
 @media screen and (min-width: 1920px) {}

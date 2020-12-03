@@ -1,8 +1,10 @@
 $(document).ready(function(){
+    console.log($(window).width());
+
     new WOW().init();
 
     $('#commentsSlider').slick({
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 5e3,
         centerMode: true,
         centerPadding: "10%",
@@ -14,6 +16,7 @@ $(document).ready(function(){
     });
 
     if ($(window).width() < 768 ) {
+        
         $('#companysSlider').slick({
             autoplay: true,
             autoplaySpeed: 5e3,
@@ -31,7 +34,7 @@ $(document).ready(function(){
     }
 
     $("#screenshotsSlider").slick({
-        autoplay: !0,
+        // autoplay: !0,
         autoplaySpeed: 3e3,
         slidesToShow: 1,
         slidesToScroll: 1,

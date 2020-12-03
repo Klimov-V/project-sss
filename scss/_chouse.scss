@@ -20,11 +20,12 @@
         &:before {
             content: "";
             background-image: url(../img/shevron.png);
-            width: 54px;
-            height: 25px;
+            background-size: cover;
+            width: 42px;
+            height: 19px;
             position: absolute;
-            left: -50px;
-            top: -13px;
+            left: -34px;
+            top: -11px;
         }
     }
 
@@ -84,12 +85,15 @@
         grid-area: t;
     }
     &__discription {
-        padding: 75px 15px 0;
+        padding: 70px 15px 0;
         grid-area: d;
 
         .discription {
             &__part {
-                margin-bottom: 20px;
+                margin-bottom: 10px;
+                &:last-of-type {
+                    margin-bottom: 20px;
+                }
             }
             &__title {
                 padding-bottom: 0;
@@ -196,9 +200,18 @@
         &__title {
             width: 100%;
             left: 0;
+            height: 64px;
         }
         &__discription {
             border-right: $border-width dashed $border-color;
+            .discription {
+                &__excess_tablet {
+                    display: inline;
+                }
+                &__title {
+                    font-size: 1.8rem;
+                }
+            }
         }
         &__bottom {
             border-top: 0;
@@ -233,6 +246,9 @@
             &_regular {
                 display: none;
             }
+        }
+        &__price {
+            font-size: 3rem;
         }
     }
 
@@ -270,6 +286,12 @@
         }
         &__arrow {
             transform: translate(170%, -31px);
+            &:before {
+                width: 54px;
+                height: 25px;
+                left: -50px;
+                top: -13px;
+            }
         }
         & .red-blok_right {
             right: -34%;

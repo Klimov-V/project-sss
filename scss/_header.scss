@@ -9,6 +9,7 @@
         background-position: 100% 100%;
         background-color: #F5F8FE;
         width: 100%;
+        max-height: 440px;
         margin-bottom: 40px;
         overflow: hidden;
     
@@ -26,7 +27,7 @@
     }
     &__title {
         margin-bottom: 20px;
-        margin-top: 40px;
+        margin-top: 35px;
         max-width: 240px;
     }
     &__subtitle {
@@ -34,7 +35,7 @@
         max-width: 305px;
         padding-left: 15px;
         position: relative;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
 
         & p:last-of-type {
             display: none;
@@ -60,7 +61,7 @@
         max-width: 140px;
         height: 210px;
         position: relative;
-        bottom: -35px;  
+        bottom: -13px;  
         z-index: 10;
         margin: 0 auto;
         
@@ -84,8 +85,8 @@
         &_right {
             width: 100px;
             height: 390px;
-            top: 294px;
-            right: -155px;
+            top: 267px;
+            right: -170px;
         }
     }
 }
@@ -258,7 +259,7 @@
 }
 @media screen and (min-width: 768px) {
     .header {
-        margin-bottom: 195px;
+        margin-bottom: 153px;
 
         .logo {
             max-width: 195px;
@@ -274,6 +275,7 @@
             background-color: transparent;
             height: 336px;
             overflow: visible;
+            margin-bottom: 48px;
             & .container {
                 flex-direction: row;
                 align-items: center;
@@ -322,6 +324,7 @@
     }
     .achievement {
         width: 478px;
+        height: 153px;
         padding: 20px 5px;
 
         &:not(:last-of-type) {
@@ -382,6 +385,7 @@
         }
     }
     .achievement {
+        height: 215px;
         &__number {
             font-size: 4rem;
         }

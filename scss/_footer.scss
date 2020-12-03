@@ -8,8 +8,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 40px;
-        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-bottom: 25px;
     }
     &__item {
         display: flex;
@@ -46,11 +46,11 @@
 .dewelopment {
     background-color: $black;
     text-align: center;
-    @include font($fz: 1.6rem, $fc: $dark-gray);
-    padding: 24px;
+    @include font($fz: 1.4rem, $fc: $white);
+    padding: 15px;
 
     &__link {
-        @include font($fz: 1.6rem, $fc: $hover);
+        @include font($fz: 1.4rem, $fc: $hover);
     }
 }
 
@@ -58,6 +58,22 @@
 @media screen and (min-width: 576px) {}
 @media screen and (min-width: 768px) {}
 @media screen and (min-width: 992px) {}
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .dewelopment {
+        padding: 22px;
+        font-size: 1.6rem;
+        &__link {
+            font-size: 1.6rem;
+        }
+    }
+    .contacts {
+        background-color: $dark;
+    
+        &__container {
+            padding-top: 58px;
+            padding-bottom: 57px;
+        }
+    }
+}
 @media screen and (min-width: 1440px) {}
 @media screen and (min-width: 1920px) {}
