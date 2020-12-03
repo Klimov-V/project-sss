@@ -3,7 +3,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    // height: 616px;
     height: 704px;
     
     &::before {
@@ -38,7 +37,7 @@
 
     & .slide {
         &-tab {
-            @include font($fz: 2.4rem, $fc:$white, $fw: 600);
+            @include font($fz: 2rem, $fc:$white, $fw: 600);
             position: absolute;
             top: -277px;
             // display: none;
@@ -103,7 +102,7 @@
             }
             &:nth-of-type(2) {
                 & .slide-tab {
-                    left: 10%;
+                    left: 67px;
                 }
                 &  .slide-tab_marker {
                     left: 100px;
@@ -111,7 +110,7 @@
             }
             &:nth-of-type(3) {
                 & .slide-tab {
-                    left: 17%;
+                    left: 120px
                 }
                 &  .slide-tab_marker {
                     left: 170px;
@@ -119,7 +118,7 @@
             }
             &:nth-of-type(4) {
                 & .slide-tab {
-                    left: 29%;
+                    left: 202px;
                 }
                 &  .slide-tab_marker {
                     left: 236px;
@@ -209,7 +208,7 @@
         }
         & .slide {
             &-tab {
-                font-size: 2.4rem;
+                font-size: 1.8rem;
                 position: fixed;
                 top: 20px;
 
@@ -237,7 +236,7 @@
                 }
                 &:nth-of-type(1) {
                     & .slide-tab {
-                        left: 30px;
+                        left: 42px;
                     }
                     &  .slide-tab_marker {
                         left: 75px;
@@ -245,7 +244,7 @@
                 }
                 &:nth-of-type(2) {
                     & .slide-tab {
-                        left: 205px;
+                        left: 217px;
                     }
                     &  .slide-tab_marker {
                         left: 245px;
@@ -253,7 +252,7 @@
                 }
                 &:nth-of-type(3) {
                     & .slide-tab {
-                        left: 355px;
+                        left: 373px;
                     }
                     &  .slide-tab_marker {
                         left: 415px;
@@ -261,7 +260,7 @@
                 }
                 &:nth-of-type(4) {
                     & .slide-tab {
-                        left: 542px;
+                        left: 556px;
                     }
                     &  .slide-tab_marker {
                         left: 585px;

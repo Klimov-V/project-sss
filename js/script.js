@@ -60,29 +60,44 @@ $(document).ready(function(){
     $("#screenshotsSlider").on('afterChange', function(event, slick, currentSlide, nextSlide){
         $(".pagination__counter b").html('0' + (currentSlide + 1));
     });
-    $(".slick-arrow").click((e) => {
-        $(".slick-arrow").blur();
-        
+    $(".slick-arrow").on("click", function (e) { 
+        $(this).blur();
     })
+    document.querySelectorAll('.slick-arrow').forEach(function (el) {
+        el.addEventListener("touchend", (e) => {
+            e.target.focus();
+            setTimeout(function() {
+                e.target.blur();
+            }, 1000);
+        })
+        
+    });
 
     function togglerHeightToSlide (e) {
-      e.stopPropagation();
-      $(this).parent(".comment").toggleClass("open");
-    //   $(this).closest(".slick-list").height("auto")
+        e.preventDefault();
+        $(e.target).parent(".comment").toggleClass("open");
+
+        if($(e.target).parent(".comment").hasClass('open')) {
+            $(e.target).html('Свернуть');
+        } else {
+            $(e.target).html('Читать полностью ');
+        }
     }
+
     $('.openText').click(togglerHeightToSlide);
+    
 
 
     var courses = document.getElementById("courses");
-    var btn = document.querySelectorAll('.scrollToCourses');
+    var btnScroll = document.querySelectorAll('.scrollToCourses');
 
     function handleButtonClick(e) {
         e.preventDefault();
 
-        courses.scrollIntoView({block: "center", behavior: "smooth"});
+        courses.scrollIntoView({behavior: "smooth"});
     }
 
-    btn.forEach(btn => {
+    btnScroll.forEach(btn => {
         btn.addEventListener('click', handleButtonClick);
     });
 

@@ -161,6 +161,7 @@
                 box-shadow: none;
             }
         }
+        
     }
     & .slick-center {
         & .comment__athor:after,
@@ -212,6 +213,9 @@
         }
     }
     .openText {
+        display: none;
+    }
+    .closeText {
         display: none;
     }
     .comment {
