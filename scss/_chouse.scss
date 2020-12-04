@@ -166,7 +166,6 @@
     }
 }
 
-
 @media screen and (min-width: 576px) {
     .chouse {
         & .red-blok_right {
@@ -277,12 +276,12 @@
     .courses {
         flex-direction: row;
         justify-content: space-between;
-        margin-top: -160px;
+        margin-top: -175px;
     }
     .chouse {
         padding-bottom: 160px;
         &__title {
-            padding: 100px 0 245px;
+            padding: 90px 0 245px;
         }
         &__arrow {
             transform: translate(170%, -31px);
@@ -319,7 +318,7 @@
         }
 
         &__discription {
-            height: 550px;
+            height: 450px;
             padding: 75px 20px 0;
             border-right: 0;
         
@@ -327,10 +326,11 @@
                 &__title {
                     display: flex;
                     align-items: center;
-                    margin-bottom: 20px;
-                }
-                &__title:last-of-type {
-                    display: inline-flex;
+                    margin-bottom: 10px;
+                    font-size: 1.6rem;
+                    &:last-of-type {
+                        display: inline-flex;
+                    }
                 }
                 &__excess {
                     display: inline;
@@ -386,6 +386,7 @@
         }
         &__notice {
             text-align: left;
+            font-size: 1.6rem;
             &_tablet {
                 display: none;
             }
@@ -411,7 +412,17 @@
             height: 128px;
         }
         &__discription {
-            padding: 136px 32px 0;
+            height: 450px;
+            padding-top: 136px;
+            font-size: 2rem;
+            & .discription {
+                &__title {
+                    font-size: 2rem;
+                }
+                &__text {
+                    font-size: 1.8rem;
+                }
+            }
         }
     }
 }
@@ -446,6 +457,8 @@
             @include font($fz: 2.6rem, $fc: $white, $fw: 600);
         }
         &__discription {
+            height: 550px;
+            padding: 136px 32px 0;
             &__part {
                 &:last-of-type {
                     .discription__title {

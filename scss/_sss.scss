@@ -44,6 +44,10 @@
             
             & span {
                 opacity: 0;
+
+                @include hover {
+                    cursor: pointer;
+                }
             }
 
             &_marker {
@@ -53,6 +57,10 @@
                 background-color: $hover;
                 position: fixed;
                 top: -7px;
+
+                @include hover {
+                    cursor: pointer;
+                }
                 
                 &::after,
                 &::before {

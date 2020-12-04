@@ -121,24 +121,37 @@
         background-color: $hover;
         background-position: center;
         background-repeat: no-repeat;
+        
 
-        @include hover {
+        &:hover  {
             background-color: #F5F8FE;
+        }
+        &:focus,
+        &:active {
             outline: none;
+            background-color: $hover;
         }
     }
     & .slick-prev {
         right: 17%;
         background-image: url(../img/icons/arrow_left.png);
-        @include hover {
+        &:hover {
             background-image: url(../img/icons/arrow_left_dark.png);
+        }
+        &:focus,
+        &:active {
+            background-image: url(../img/icons/arrow_left.png);
         }
     }
     & .slick-next {
         right: 2%;
         background-image: url(../img/icons/arrow_right.png);
-        @include hover {
+        &:hover {
             background-image: url(../img/icons/arrow_right_dark.png);
+        }
+        &:focus,
+        &:active {
+            background-image: url(../img/icons/arrow_right.png);
         }
     }
 
@@ -172,6 +185,9 @@
             opacity: 1;
         }
     }
+    & .slick-track {
+        display: flex;
+    }
 }
 
 #commentsSlider .comment__athor:after,
@@ -191,7 +207,7 @@
 @media screen and (min-width: 576px) {
     #commentsSlider {
         & .slick-prev {
-            right: 20%;
+            right: 10%;
         }
         & .slick-slide {
             width: 340px;
@@ -203,6 +219,7 @@
         & .slick-slide {
             width: 720px;
             margin: 0 5px 0;
+            padding: 24px 24px 24px 12px;
             // height: auto;
         }
         & .slick-prev {
@@ -218,7 +235,8 @@
     .closeText {
         display: none;
     }
-    .comment {
+    .comment{
+        height: auto;
         &::after {
             top: 16px;
             right: 24px;
@@ -235,10 +253,9 @@
             margin: 10px 0;
         }
         &__content {
-            position: absolute;
-            top: 25px;
-            left: 120px;
             max-width: 570px;
+            float: right;
+            margin-top: -110px;
         }
     }
 }
@@ -311,19 +328,20 @@
         &__content {
             position: static;
             max-width: 100%;
+            margin-top: 0;
         }
     }
     
     #commentsSlider {
         position: relative;
-        transform: translateY(-57%);
+        transform: translateY(-48%);
     
         & .slick-arrow {
             top: 50%;
             width: 48px;
             height: 48px;
     
-            @include hover {
+            &:hover {
                 background-color: #F5F8FE;
                 outline: none;
             }

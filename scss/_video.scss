@@ -53,30 +53,30 @@
         border: none;
     }
     &__button {
-        width: 120px;
-        height: 120px;
+        // width: 120px;
+        // height: 120px;
         padding: 0;
         background-color: transparent;
         display: none;
         cursor: pointer;
 
-        &::before,
-        &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            display: none;
-        }
-        &::before {
-            border-bottom: 40px solid $play-btn;
-            border-right: 120px solid transparent;
-            top: -40px;
-        }
-        &::after {
-            border-top: 42px solid $play-btn;
-            border-right: 120px solid transparent;
-            bottom: -42px;
-        }
+        // &::before,
+        // &::after {
+        //     content: "";
+        //     display: block;
+        //     position: absolute;
+        //     display: none;
+        // }
+        // &::before {
+        //     border-bottom: 40px solid $play-btn;
+        //     border-right: 120px solid transparent;
+        //     top: -40px;
+        // }
+        // &::after {
+        //     border-top: 42px solid $play-btn;
+        //     border-right: 120px solid transparent;
+        //     bottom: -42px;
+        // }
 
         &__inner {
             width: 56px;
@@ -146,9 +146,9 @@
             }
         }
         &__button {
-            width: 56px;
-            height: 56px;
-            background-color: $play-btn;
+            // width: 56px;
+            // height: 56px;
+            // background-color: $play-btn;
             &::before,
             &::after {
                 display: block;
@@ -216,6 +216,7 @@
 }
 @media screen and (min-width: 1200px) {
     .video {
+        margin-top: 180px;
         &__container {
             margin-bottom: 70px;
         }

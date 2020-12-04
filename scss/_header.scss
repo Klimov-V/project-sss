@@ -6,10 +6,10 @@
     &__content {
         background-image: url(../img/header_mobile_bg.jpg); 
         background-repeat: no-repeat;
-        background-position: 100% 100%;
+        background-position: bottom 0 right 0;
         background-color: #F5F8FE;
         width: 100%;
-        max-height: 440px;
+        max-height: 736px;
         margin-bottom: 40px;
         overflow: hidden;
     
@@ -18,7 +18,18 @@
             justify-content: space-between;
             align-items: start;
             flex-direction: column;
-            height: 100%;
+            &:first-of-type{
+                background-color: #fff;
+            }
+            &:last-of-type {
+                height: 440px;
+            }
+        }
+        & .red-blok {
+            &_wrapper {
+                height: 504px;
+                overflow: hidden;
+            }
         }
     }
     &__text {
@@ -61,7 +72,7 @@
         max-width: 140px;
         height: 210px;
         position: relative;
-        bottom: -13px;  
+        bottom: -18px;  
         z-index: 10;
         margin: 0 auto;
         
@@ -85,8 +96,8 @@
         &_right {
             width: 100px;
             height: 390px;
-            top: 267px;
-            right: -170px;
+            top: 273px;
+            right: -160px;
         }
     }
 }
@@ -255,6 +266,23 @@
             max-width: 257px;
             height: 385px;
         }
+        &__content {
+        
+            & .container {
+                &:last-of-type {
+                    height: 640px;
+                }
+            }
+            
+            & .red-blok {
+                &_wrapper {
+                    height: 704px;
+                }
+                &_right {
+                    top: 440px;
+                }
+            }
+        }
     }
 }
 @media screen and (min-width: 768px) {
@@ -270,15 +298,18 @@
         }
         &__content {
             background-image: url(../img/header_tablet_bg.jpg);
-            background-size: cover;
-            background-position: right;
+            background-size: 100% 336px;
+            background-position: bottom 0 right 0;
             background-color: transparent;
-            height: 336px;
+            height: 400px;
             overflow: visible;
             margin-bottom: 48px;
             & .container {
                 flex-direction: row;
                 align-items: center;
+                &:last-of-type {
+                    height: 336px;
+                }
             }
         }
         &__photo {
@@ -360,6 +391,7 @@
         &__content {
             background-image: url(../img/header_bg.jpg);
             margin-bottom: 90px;
+            height: 440px;
         }
         &__photo {
             // max-width: 480px;
@@ -412,7 +444,13 @@
     .header {
         
         &__content {
-            height: 470px;
+            height: 575px;
+            background-size: 100% 475px;
+            & .container {
+                &:last-of-type {
+                    height: 474px;
+                }
+            }
         }
         &__photo {
             max-width: 480px;
@@ -449,11 +487,19 @@
 @media screen and (min-width: 1440px) {
     .header {
         &__content {
-            height: 632px;
+            height: 736px;
+            background-size: 100% 632px;
+            overflow: hidden;
+
+            & .container {
+                &:last-of-type {
+                    height: 632px;
+                }
+            }
         }
         &__photo {
             height: 680px;
-            bottom: 25px;
+            bottom: 26px;
         }
         &__title {
             margin-bottom: 40px;
@@ -472,6 +518,19 @@
                 width: 250px;
                 height: 1400px;
             }
+            &_wrapper {
+                overflow: visible;
+            }
+        }
+    }
+    .achievement {
+        height: 248px;
+        padding: 32px 5px;
+        &__icon {
+            margin-bottom: 25px;
+        }
+        &__text {
+            margin-top: 35px;
         }
     }
 }
@@ -479,7 +538,11 @@
     .header {
         // margin-bottom: 195px;
         &__content {
-            background-size: 98% 100%;
+            background-size: 98% 632px;
+            background-position: bottom 0 right 0;
+        }
+        &__text {
+            margin-top: 20px;
         }
         &__title {
             margin-bottom: 40px;
@@ -501,7 +564,7 @@
                 }
             }
             &_right {
-                top: -16%;
+                top: -35%;
                 right: -30%;
                 width: 390px;
                 height: 1400px;

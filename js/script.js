@@ -1,10 +1,9 @@
 $(document).ready(function(){
-    console.log($(window).width());
 
     new WOW().init();
 
     $('#commentsSlider').slick({
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 5e3,
         centerMode: true,
         centerPadding: "10%",
@@ -13,6 +12,8 @@ $(document).ready(function(){
         variableWidth: true,
         arrows: !0,
         swipe: !0,
+        prevArrow: '<a class="slick-prev">Previous</a>',
+        nextArrow: '<a class="slick-next">Next</a>'
     });
 
     if ($(window).width() < 768 ) {
@@ -34,7 +35,7 @@ $(document).ready(function(){
     }
 
     $("#screenshotsSlider").slick({
-        // autoplay: !0,
+        autoplay: !0,
         autoplaySpeed: 3e3,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -66,15 +67,6 @@ $(document).ready(function(){
     $(".slick-arrow").on("click", function (e) { 
         $(this).blur();
     })
-    document.querySelectorAll('.slick-arrow').forEach(function (el) {
-        el.addEventListener("touchend", (e) => {
-            e.target.focus();
-            setTimeout(function() {
-                e.target.blur();
-            }, 1000);
-        })
-        
-    });
 
     function togglerHeightToSlide (e) {
         e.preventDefault();
