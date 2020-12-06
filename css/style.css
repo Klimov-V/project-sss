@@ -1929,15 +1929,15 @@ body {
     border-radius: 50%;
     font-size: 0;
     border: none;
-    background-color: #E43137;
+    background-color: #E43137 !important;
     background-position: center;
     background-repeat: no-repeat; }
     #commentsSlider .slick-arrow_hover {
-      background-color: #f5f8fe; }
+      background-color: #f5f8fe !important; }
       #commentsSlider .slick-arrow_hover.slick-prev {
-        background-image: url(../img/icons/arrow_left_dark.png); }
+        background-image: url(../img/icons/arrow_left_dark.png) !important; }
       #commentsSlider .slick-arrow_hover.slick-next {
-        background-image: url(../img/icons/arrow_right_dark.png); }
+        background-image: url(../img/icons/arrow_right_dark.png) !important; }
   #commentsSlider .slick-prev {
     right: 17%;
     background-image: url(../img/icons/arrow_left.png); }

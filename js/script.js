@@ -11,8 +11,8 @@ $(document).ready(function () {
     variableWidth: true,
     arrows: !0,
     swipe: !0,
-    prevArrow: '<a class="slick-prev">Previous</a>',
-    nextArrow: '<a class="slick-next">Next</a>',
+    prevArrow: '<a class="slick-prev" id="prev">Previous</a>',
+    nextArrow: '<a class="slick-next" id="next">Next</a>',
   });
 
   if ($(window).width() < 768) {
@@ -98,7 +98,9 @@ $(document).ready(function () {
     btn.addEventListener("click", handleButtonClick);
   });
 
-  var arrowBtns = document.querySelectorAll(".slick-arrow");
+  var arrowBtns = document.querySelectorAll("#commentsSlider .slick-arrow"),
+    arrowBtnPrev = document.querySelector("#prev"),
+    arrowBtnNext = document.querySelector("#next");
 
   arrowBtns &&
     arrowBtns.forEach((arrowBtn) => {
@@ -117,5 +119,14 @@ $(document).ready(function () {
         e.preventDefault();
         e.target.classList.remove("slick-arrow_hover");
       });
+    });
+
+  arrowBtnPrev &&
+    arrowBtnPrev.addEventListener("touchstart", () => {
+      $("#commentsSlider").slick("slickPrev");
+    });
+  arrowBtnNext &&
+    arrowBtnNext.addEventListener("touchstart", () => {
+      $("#commentsSlider").slick("slickNext");
     });
 });
