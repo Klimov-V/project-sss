@@ -1,592 +1,973 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SSS</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="header">
-        <div class="red-blok_wrapper wow fadeInBottomLeft">
-            <div class="red-blok red-blok_left"></div>
+      <div class="red-blok_wrapper wow fadeInBottomLeft">
+        <div class="red-blok red-blok_left"></div>
+      </div>
+      <div class="header__content">
+        <div class="container">
+          <div class="logo__container wow fadeInLeft">
+            <div class="logo">
+              <a class="logo__link" href="/">
+                <img class="logo__img" src="./img/logo/logo.png" alt="Logo" />
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="header__content">
-            <div class="container">
-                <div class="logo__container wow fadeInLeft">
-                    <div class="logo">
-                        <a class="logo__link" href="/">
-                            <img class="logo__img" src="./img/logo/logo.png" alt="Logo">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="red-blok_wrapper wow fadeInTopRight">
-                <div class="red-blok red-blok_right"></div>
-            </div>
-            <div class="container">
-                <div class="header__text wow fadeInLeft">
-                    <h1 class="header__title section__title">Конвертируйте слова в деньги</h1>
-                    <div class="header__subtitle">
-                        <p>Секретные методы продвижения сетевого бизнеса <strong class="header__subtitle_marked">по методикам спецслужб.</strong></p>
-                        <p>Выберите свой первый курс и откройте для себя новые возможности.</p>
-                    </div>
-                    <a class="btn scrollToCourses" href="#">Выбрать курс <span></span></a>
-                </div>
-                <div class="header__photo wow fadeInRight">
-                    <img src="./img/header__photo.png" alt="Сергей Стужук">
-                </div>
-            </div>
+        <div class="red-blok_wrapper wow fadeInTopRight">
+          <div class="red-blok red-blok_right"></div>
         </div>
-        <div class="achievements container">
-            <div class="achievement wow fadeInUp">
-                <div class="achievement__head">
-                    <div class="achievement__icon achievement__icon_mentor"></div>
-                    <div class="achievement__number">4000+</div>
-                </div>
-                <div class="achievement__text">человек прошли обучение<br>от нашего тренера</div>
+        <div class="container">
+          <div class="header__text wow fadeInLeft">
+            <h1 class="header__title section__title">
+              Конвертируйте слова в деньги
+            </h1>
+            <div class="header__subtitle">
+              <p>
+                Секретные методы продвижения сетевого бизнеса
+                <strong class="header__subtitle_marked"
+                  >по методикам спецслужб.</strong
+                >
+              </p>
+              <p>
+                Выберите свой первый курс и откройте для себя новые возможности.
+              </p>
             </div>
-            <div class="achievement wow fadeInUp">
-                <div class="achievement__head">
-                    <div class="achievement__icon achievement__icon_building"></div>
-                    <div class="achievement__number">27</div>
-                </div>
-                <div class="achievement__text">компаний со всего мира<br>выбрали наши курсы</div>
-            </div>
-            <div class="achievement wow fadeInUp">
-                <div class="achievement__head">
-                    <div class="achievement__icon achievement__icon_world"></div>
-                    <div class="achievement__number">5+</div>
-                </div>
-                <div class="achievement__text">стран посетил наш тренер с<br><span class="achievement__excess">офлайн</span> лекциями и тренингами</div>
-            </div>
+            <a class="btn scrollToCourses" href="#"
+              >Выбрать курс <span></span
+            ></a>
+          </div>
+          <div class="header__photo wow fadeInRight">
+            <img src="./img/header__photo.png" alt="Сергей Стужук" />
+          </div>
         </div>
+      </div>
+      <div class="achievements container">
+        <div class="achievement wow fadeInUp">
+          <div class="achievement__head">
+            <div class="achievement__icon achievement__icon_mentor"></div>
+            <div class="achievement__number">4000+</div>
+          </div>
+          <div class="achievement__text">
+            человек прошли обучение<br />от нашего тренера
+          </div>
+        </div>
+        <div class="achievement wow fadeInUp">
+          <div class="achievement__head">
+            <div class="achievement__icon achievement__icon_building"></div>
+            <div class="achievement__number">27</div>
+          </div>
+          <div class="achievement__text">
+            компаний со всего мира<br />выбрали наши курсы
+          </div>
+        </div>
+        <div class="achievement wow fadeInUp">
+          <div class="achievement__head">
+            <div class="achievement__icon achievement__icon_world"></div>
+            <div class="achievement__number">5+</div>
+          </div>
+          <div class="achievement__text">
+            стран посетил наш тренер с<br /><span class="achievement__excess"
+              >офлайн</span
+            >
+            лекциями и тренингами
+          </div>
+        </div>
+      </div>
     </header>
 
     <section class="chouse" id="courses">
-        <div class="red-blok_wrapper wow fadeInTopRight">
-            <div class="red-blok red-blok_right"></div>
+      <div class="red-blok_wrapper wow fadeInTopRight">
+        <div class="red-blok red-blok_right"></div>
+      </div>
+      <div class="chouse__title wow fadeInRight">
+        <div class="container">
+          <h2 class="chouse__title-text section__title section__title_line">
+            Выберите свой курс
+          </h2>
         </div>
-        <div class="chouse__title wow fadeInRight">
-            <div class="container">
-                <h2 class="chouse__title-text section__title section__title_line">Выберите свой курс</h2>
+        <div class="chouse__arrow"></div>
+      </div>
+      <div class="courses container">
+        <div class="course wow fadeInLeft">
+          <h3 class="course__title">Курс №1 Анатомия лидерства</h3>
+          <div class="course__discription">
+            <div class="discription__part">
+              <div class="discription__title">
+                <img class="discription__icon" src="./img/vector.png" alt="" />
+                <span
+                  >Цель
+                  <span class="discription__excess discription__excess_tablet"
+                    >тренинга</span
+                  >:</span
+                >
+              </div>
+              <div class="discription__text">
+                Развить лидерские качества, а также научить техникам управления
+                командами
+              </div>
             </div>
-            <div class="chouse__arrow"></div>
+            <div class="discription__part">
+              <div class="discription__title">
+                <img class="discription__icon" src="./img/partner.png" alt="" />
+                <span>Для кого:</span>
+              </div>
+              <div class="discription__text">
+                Для собственников и топ-лидеров сетевого бизнеса
+              </div>
+            </div>
+            <div class="discription__part">
+              <div class="discription__title">
+                <img class="discription__icon" src="./img/mount.png" alt="" />
+                <span
+                  ><span class="discription__excess">Что вы</span
+                  ><span class="discription__excess_mobile">Вы</span>
+                  получите:</span
+                >
+              </div>
+              <div class="discription__text">
+                Умение правильной постановки цели, управление конфликтами и
+                управление командой в целом
+              </div>
+            </div>
+            <div class="discription__part">
+              <div class="discription__title">
+                <img class="discription__icon" src="./img/clock.png" alt="" />
+                <span
+                  ><span class="discription__excess">Продолжительность</span
+                  ><span class="discription__excess_mobile">Длительность</span>
+                  курса:</span
+                >
+              </div>
+              <div class="discription__text">17 часов</div>
+            </div>
+          </div>
+          <div class="course__bottom">
+            <div class="course__price">49$</div>
+            <div class="course__notice">
+              <p class="course__notice_regular">
+                При заявке Вам не нужно ничего платить. О дате старта курса мы
+                сообщим Вам лично
+              </p>
+              <div class="course__notice_tablet">
+                <p>При заявке Вам не нужно ничего платить.</p>
+                <p>О дате старта курса мы сообщим Вам лично</p>
+              </div>
+            </div>
+            <a
+              class="btn course__btn leadership"
+              data-toggle="modal"
+              data-target="#leadership"
+              >Подать заявку <span></span
+            ></a>
+          </div>
+          <a
+            class="btn leadership"
+            data-toggle="modal"
+            data-target="#leadership"
+            >Подать заявку <span></span
+          ></a>
         </div>
-        <div class="courses container">
-            <div class="course wow fadeInLeft">
-                <h3 class="course__title">Курс №1 Анатомия лидерства</h3>
-                <div class="course__discription">
-                    <div class="discription__part">
-                        <div class="discription__title">
-                            <img class="discription__icon" src="./img/vector.png" alt="">
-                            <span>Цель <span class="discription__excess discription__excess_tablet">тренинга</span>:</span>
-                        </div>
-                        <div class="discription__text">Развить лидерские качества, а также научить техникам управления командами</div>
-                    </div>
-                    <div class="discription__part">
-                        <div class="discription__title">
-                            <img class="discription__icon" src="./img/partner.png" alt="">
-                            <span>Для кого:</span>
-                        </div>
-                        <div class="discription__text">Для собственников и топ-лидеров сетевого бизнеса</div>
-                    </div>
-                    <div class="discription__part">
-                        <div class="discription__title">
-                            <img class="discription__icon" src="./img/mount.png" alt="">
-                            <span><span class="discription__excess">Что вы</span><span class="discription__excess_mobile">Вы</span> получите:</span>
-                        </div>
-                        <div class="discription__text">Умение правильной постановки цели, управление конфликтами и управление командой в целом</div>
-                    </div>
-                    <div class="discription__part">
-                        <div class="discription__title">
-                            <img class="discription__icon" src="./img/clock.png" alt="">
-                            <span><span class="discription__excess">Продолжительность</span><span class="discription__excess_mobile">Длительность</span> курса:</span>
-                        </div>
-                        <div class="discription__text">17 часов</div>
-                    </div>
-                </div>
-                <div class="course__bottom">
-                    <div class="course__price">49$</div>
-                    <div class="course__notice">
-                        <p class="course__notice_regular">При заявке Вам не нужно ничего платить. О дате старта курса мы сообщим Вам лично</p>
-                        <div class="course__notice_tablet">
-                            <p>При заявке Вам не нужно ничего платить.</p>
-                            <p>О дате старта курса мы сообщим Вам лично</p>
-                        </div>
-                    </div>
-                    <a class="btn course__btn leadership" data-toggle="modal" data-target="#leadership">Подать заявку <span></span></a>
-                </div>
-                <a class="btn leadership" data-toggle="modal" data-target="#leadership">Подать заявку <span></span></a>
+        <div class="course wow fadeInUp">
+          <h3 class="course__title">
+            Курс №2 Все секреты успешного выступления
+          </h3>
+          <div class="course__discription">
+            <div class="discription__part">
+              <div class="discription__title">
+                <img class="discription__icon" src="./img/vector.png" alt="" />
+                <span
+                  >Цель
+                  <span class="discription__excess discription__excess_tablet"
+                    >тренинга</span
+                  >:</span
+                >
+              </div>
+              <div class="discription__text">
+                Развить навык эффективного выступления, проведения
+                результативных бизнес презентаций перед любой аудиторией
+              </div>
             </div>
-            <div class="course wow fadeInUp">
-                <h3 class="course__title">Курс №2 Все секреты успешного выступления</h3>
-                <div class="course__discription">
-                    <div class="discription__part">
-                        <div class="discription__title">
-                            <img class="discription__icon" src="./img/vector.png" alt="">
-                            <span>Цель <span class="discription__excess discription__excess_tablet">тренинга</span>:</span>
-                        </div>
-                        <div class="discription__text">Развить навык эффективного выступления, проведения результативных бизнес презентаций перед любой аудиторией</div>
-                    </div>
-                    <div class="discription__part">
-                        <div class="discription__title">
-                            <img class="discription__icon" src="./img/partner.png" alt="">
-                            <span>Для кого:</span>
-                        </div>
-                        <div class="discription__text">Для собственников, топ-лидеров и дистрибьюторов сетевого бизнеса</div>
-                    </div>
-                    <div class="discription__part">
-                        <div class="discription__title">
-                            <img class="discription__icon" src="./img/mount.png" alt="">
-                            <span><span class="discription__excess">Что вы</span><span class="discription__excess_mobile">Вы</span> получите:</span>
-                        </div>
-                        <div class="discription__text">Знания о том, как при помощи выступлений быстро приобрести в структуру необходимое количество активных партнеров</div>
-                    </div>
-                    <div class="discription__part">
-                        <div class="discription__title">
-                            <img class="discription__icon" src="./img/clock.png" alt="">
-                            <span><span class="discription__excess">Продолжительность</span><span class="discription__excess_mobile">Длительность</span> курса:</span>
-                        </div>
-                        <div class="discription__text">17 часов</div>
-                    </div>
-                </div>
-                <div class="course__bottom">
-                    <div class="course__price">49$</div>
-                    <div class="course__notice">
-                        <p class="course__notice_regular">При заявке Вам не нужно ничего платить. О дате старта курса мы сообщим Вам лично</p>
-                        <div class="course__notice_tablet">
-                            <p>При заявке Вам не нужно ничего платить.</p>
-                            <p>О дате старта курса мы сообщим Вам лично</p>
-                        </div>
-                    </div>
-                    <a class="btn course__btn performance" data-toggle="modal" data-target="#performance">Подать заявку <span></span></a>
-                </div>
-                <a class="btn performance" data-toggle="modal" data-target="#performance">Подать заявку <span></span></a>
+            <div class="discription__part">
+              <div class="discription__title">
+                <img class="discription__icon" src="./img/partner.png" alt="" />
+                <span>Для кого:</span>
+              </div>
+              <div class="discription__text">
+                Для собственников, топ-лидеров и дистрибьюторов сетевого бизнеса
+              </div>
             </div>
-            <div class="course wow fadeInRight">
-                <h3 class="course__title">Курс №3 Эффективные переговоры</h3>
-                <div class="course__discription">
-                    <div class="discription__part">
-                        <div class="discription__title">
-                            <img class="discription__icon" src="./img/vector.png" alt="">
-                            <span>Цель <span class="discription__excess discription__excess_tablet">тренинга</span>:</span>
-                        </div>
-                        <div class="discription__text">Развить способность проведения качественных переговоров</div>
-                    </div>
-                    <div class="discription__part">
-                        <div class="discription__title">
-                            <img class="discription__icon" src="./img/partner.png" alt="">
-                            <span>Для кого:</span>
-                        </div>
-                        <div class="discription__text">Для собственников, топ-лидеров и дистрибьюторов сетевого бизнеса</div>
-                    </div>
-                    <div class="discription__part">
-                        <div class="discription__title">
-                            <img class="discription__icon" src="./img/mount.png" alt="">
-                            <span><span class="discription__excess">Что вы</span><span class="discription__excess_mobile">Вы</span> получите:</span>
-                        </div>
-                        <div class="discription__text">Навыки убеждения оппонентов. Узнаете, как легко отвечать на возражения и успешно завершать сделки</div>
-                    </div>
-                    <div class="discription__part">
-                        <div class="discription__title">
-                            <img class="discription__icon" src="./img/clock.png" alt="">
-                            <span><span class="discription__excess">Продолжительность</span><span class="discription__excess_mobile">Длительность</span> курса:</span>
-                        </div>
-                        <div class="discription__text">17 часов</div>
-                    </div>
-                </div>
-                <div class="course__bottom">
-                    <div class="course__price">49$</div>
-                    <div class="course__notice">
-                        <p class="course__notice_regular">При заявке Вам не нужно ничего платить. О дате старта курса мы сообщим Вам лично</p>
-                        <div class="course__notice_tablet">
-                            <p>При заявке Вам не нужно ничего платить.</p>
-                            <p>О дате старта курса мы сообщим Вам лично</p>
-                        </div>
-                    </div>
-                    <a class="btn course__btn conversation" data-toggle="modal" data-target="#conversation">Подать заявку <span></span></a>
-                </div>
-                <a class="btn conversation" data-toggle="modal" data-target="#conversation">Подать заявку <span></span></a>
+            <div class="discription__part">
+              <div class="discription__title">
+                <img class="discription__icon" src="./img/mount.png" alt="" />
+                <span
+                  ><span class="discription__excess">Что вы</span
+                  ><span class="discription__excess_mobile">Вы</span>
+                  получите:</span
+                >
+              </div>
+              <div class="discription__text">
+                Знания о том, как при помощи выступлений быстро приобрести в
+                структуру необходимое количество активных партнеров
+              </div>
             </div>
-           
+            <div class="discription__part">
+              <div class="discription__title">
+                <img class="discription__icon" src="./img/clock.png" alt="" />
+                <span
+                  ><span class="discription__excess">Продолжительность</span
+                  ><span class="discription__excess_mobile">Длительность</span>
+                  курса:</span
+                >
+              </div>
+              <div class="discription__text">17 часов</div>
+            </div>
+          </div>
+          <div class="course__bottom">
+            <div class="course__price">49$</div>
+            <div class="course__notice">
+              <p class="course__notice_regular">
+                При заявке Вам не нужно ничего платить. О дате старта курса мы
+                сообщим Вам лично
+              </p>
+              <div class="course__notice_tablet">
+                <p>При заявке Вам не нужно ничего платить.</p>
+                <p>О дате старта курса мы сообщим Вам лично</p>
+              </div>
+            </div>
+            <a
+              class="btn course__btn performance"
+              data-toggle="modal"
+              data-target="#performance"
+              >Подать заявку <span></span
+            ></a>
+          </div>
+          <a
+            class="btn performance"
+            data-toggle="modal"
+            data-target="#performance"
+            >Подать заявку <span></span
+          ></a>
         </div>
+        <div class="course wow fadeInRight">
+          <h3 class="course__title">Курс №3 Эффективные переговоры</h3>
+          <div class="course__discription">
+            <div class="discription__part">
+              <div class="discription__title">
+                <img class="discription__icon" src="./img/vector.png" alt="" />
+                <span
+                  >Цель
+                  <span class="discription__excess discription__excess_tablet"
+                    >тренинга</span
+                  >:</span
+                >
+              </div>
+              <div class="discription__text">
+                Развить способность проведения качественных переговоров
+              </div>
+            </div>
+            <div class="discription__part">
+              <div class="discription__title">
+                <img class="discription__icon" src="./img/partner.png" alt="" />
+                <span>Для кого:</span>
+              </div>
+              <div class="discription__text">
+                Для собственников, топ-лидеров и дистрибьюторов сетевого бизнеса
+              </div>
+            </div>
+            <div class="discription__part">
+              <div class="discription__title">
+                <img class="discription__icon" src="./img/mount.png" alt="" />
+                <span
+                  ><span class="discription__excess">Что вы</span
+                  ><span class="discription__excess_mobile">Вы</span>
+                  получите:</span
+                >
+              </div>
+              <div class="discription__text">
+                Навыки убеждения оппонентов. Узнаете, как легко отвечать на
+                возражения и успешно завершать сделки
+              </div>
+            </div>
+            <div class="discription__part">
+              <div class="discription__title">
+                <img class="discription__icon" src="./img/clock.png" alt="" />
+                <span
+                  ><span class="discription__excess">Продолжительность</span
+                  ><span class="discription__excess_mobile">Длительность</span>
+                  курса:</span
+                >
+              </div>
+              <div class="discription__text">17 часов</div>
+            </div>
+          </div>
+          <div class="course__bottom">
+            <div class="course__price">49$</div>
+            <div class="course__notice">
+              <p class="course__notice_regular">
+                При заявке Вам не нужно ничего платить. О дате старта курса мы
+                сообщим Вам лично
+              </p>
+              <div class="course__notice_tablet">
+                <p>При заявке Вам не нужно ничего платить.</p>
+                <p>О дате старта курса мы сообщим Вам лично</p>
+              </div>
+            </div>
+            <a
+              class="btn course__btn conversation"
+              data-toggle="modal"
+              data-target="#conversation"
+              >Подать заявку <span></span
+            ></a>
+          </div>
+          <a
+            class="btn conversation"
+            data-toggle="modal"
+            data-target="#conversation"
+            >Подать заявку <span></span
+          ></a>
+        </div>
+      </div>
     </section>
-    
+
     <section class="sss">
-        <h2 class="sss__title wow fadeIn">sss</h2>
-        <div class="container sss__container wow fadeInUp">
-            <div id="screenshotsThumbler">
-                <div>
-                    <div class="slide-tab"><div class="slide-tab_marker"></div><span>Методики</span></div>
-                    <div class="slide-content" data-id="0"> 
-                        <p>В основу обучения входят исследования в сферах психологии, социологии и нейронных связей.</p>
-                        <p>Вы научитесь выстраивать правильную тактику и стратегию в общении с людьми лично и посредством онлайн-презентаций.</p>
-                        <p>Освоите лучшие на сегодня техники влияния, основанные на приемах спецслужб и опыте успешных современных политиков.</p>
-                        <p>Узнаете о профессиональных хитростях эффективных бизнес-презентаций.</p>
-                    </div>
-                </div>
-                <div>
-                    
-                    <div class="slide-tab"><div class="slide-tab_marker"></div><span>Процесс</span></div>
-                    <div class="slide-content" data-id="2"> 
-                        <p>После регистрации участники получают доступ к Видео-курсу по выбранному направлению.</p>
-                        <p>Обучающая программа включает ряд видеолекций, которые сопровождаются практическими занятиями и дискуссиями.</p>
-                        <p>Обучение проходит поэтапно и каждый следующий урок открывается только после прохождения предыдущего.</p>
-                        <p>Программа курса содержит 8 модулей.</p>
-                    </div>
-                </div>
-                <div>
-                    
-                    <div class="slide-tab"><div class="slide-tab_marker"></div><span>Поддержка</span></div>
-                    <div class="slide-content t" data-id="3"> 
-                        <p>В течении всего курса Вам будет доступен чат активности, где Вы сможете обсуждать интересующие вопросы вместе с тренером и участниками обучения.</p>
-                        <p>Кроме того, на все технические вопросы, возникнувшие в ходе обучения, вам в любое время ответит наша техническая поддержка.</p>
-                    </div>
-                </div>
-                <div>
-                    
-                    <div class="slide-tab"><div class="slide-tab_marker"></div><span>Команда</span></div>
-                    <div class="slide-content" data-id="4"> 
-                        <p>Наша команда это симбиоз первоклассных специалистов по психологии, млм бизнесу и IT технологиям. </p>
-                        <p>А наш тренер международный бизнес-эксперт, Полковник Государственной Службы по борьбе с Экономической Преступностью специализирующийся на психологии влияния с применением методов спецслужб.</p>
-                    </div>
-                </div>
+      <h2 class="sss__title wow fadeIn">sss</h2>
+      <div class="container sss__container wow fadeInUp">
+        <div id="screenshotsThumbler">
+          <div>
+            <div class="slide-tab">
+              <div class="slide-tab_marker"></div>
+              <span>Методики</span>
             </div>
-        
-            <div id="screenshotsSlider">
-                <div data-index="1"> 
-                    <div class="slider-img"><img data-src="./img/sss_slides/slide1.jpg" src="./img/sss_slides/slide1.jpg" class="lazyload" alt="img"></div>
-                </div>
-                <div data-index="2"> 
-                    <div class="slider-img"><img data-src="./img/sss_slides/slide2.jpg" src="./img/sss_slides/slide2.jpg" class="lazyload" alt="img"></div>
-                </div>
-                <div data-index="3"> 
-                    <div class="slider-img"><img data-src="./img/sss_slides/slide3.jpg" src="./img/sss_slides/slide3.jpg" class="lazyload" alt="img"></div>
-                </div>
-                <div data-index="4"> 
-                    <div class="slider-img"><img data-src="./img/sss_slides/slide4.jpg" src="./img/sss_slides/slide4.jpg" class="lazyload" alt="img"></div>
-                </div>
+            <div class="slide-content" data-id="0">
+              <p>
+                В основу обучения входят исследования в сферах психологии,
+                социологии и нейронных связей.
+              </p>
+              <p>
+                Вы научитесь выстраивать правильную тактику и стратегию в
+                общении с людьми лично и посредством онлайн-презентаций.
+              </p>
+              <p>
+                Освоите лучшие на сегодня техники влияния, основанные на приемах
+                спецслужб и опыте успешных современных политиков.
+              </p>
+              <p>
+                Узнаете о профессиональных хитростях эффективных
+                бизнес-презентаций.
+              </p>
             </div>
-            <div class="pagination">
-                <div class="pagination__counter">
-                    <b>01</b> / 04
-                </div>
-                <div class="pagination__dots"></div>
-                <div class="pagination__buttons"></div>
+          </div>
+          <div>
+            <div class="slide-tab">
+              <div class="slide-tab_marker"></div>
+              <span>Процесс</span>
             </div>
+            <div class="slide-content" data-id="2">
+              <p>
+                После регистрации участники получают доступ к Видео-курсу по
+                выбранному направлению.
+              </p>
+              <p>
+                Обучающая программа включает ряд видеолекций, которые
+                сопровождаются практическими занятиями и дискуссиями.
+              </p>
+              <p>
+                Обучение проходит поэтапно и каждый следующий урок открывается
+                только после прохождения предыдущего.
+              </p>
+              <p>Программа курса содержит 8 модулей.</p>
+            </div>
+          </div>
+          <div>
+            <div class="slide-tab">
+              <div class="slide-tab_marker"></div>
+              <span>Поддержка</span>
+            </div>
+            <div class="slide-content t" data-id="3">
+              <p>
+                В течении всего курса Вам будет доступен чат активности, где Вы
+                сможете обсуждать интересующие вопросы вместе с тренером и
+                участниками обучения.
+              </p>
+              <p>
+                Кроме того, на все технические вопросы, возникнувшие в ходе
+                обучения, вам в любое время ответит наша техническая поддержка.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="slide-tab">
+              <div class="slide-tab_marker"></div>
+              <span>Команда</span>
+            </div>
+            <div class="slide-content" data-id="4">
+              <p>
+                Наша команда это симбиоз первоклассных специалистов по
+                психологии, млм бизнесу и IT технологиям.
+              </p>
+              <p>
+                А наш тренер международный бизнес-эксперт, Полковник
+                Государственной Службы по борьбе с Экономической Преступностью
+                специализирующийся на психологии влияния с применением методов
+                спецслужб.
+              </p>
+            </div>
+          </div>
         </div>
+
+        <div id="screenshotsSlider">
+          <div data-index="1">
+            <div class="slider-img">
+              <img
+                data-src="./img/sss_slides/slide1.jpg"
+                src="./img/sss_slides/slide1.jpg"
+                class="lazyload"
+                alt="img"
+              />
+            </div>
+          </div>
+          <div data-index="2">
+            <div class="slider-img">
+              <img
+                data-src="./img/sss_slides/slide2.jpg"
+                src="./img/sss_slides/slide2.jpg"
+                class="lazyload"
+                alt="img"
+              />
+            </div>
+          </div>
+          <div data-index="3">
+            <div class="slider-img">
+              <img
+                data-src="./img/sss_slides/slide3.jpg"
+                src="./img/sss_slides/slide3.jpg"
+                class="lazyload"
+                alt="img"
+              />
+            </div>
+          </div>
+          <div data-index="4">
+            <div class="slider-img">
+              <img
+                data-src="./img/sss_slides/slide4.jpg"
+                src="./img/sss_slides/slide4.jpg"
+                class="lazyload"
+                alt="img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <div class="pagination__counter"><b>01</b> / 04</div>
+          <div class="pagination__dots"></div>
+          <div class="pagination__buttons"></div>
+        </div>
+      </div>
     </section>
 
     <section class="speaker">
-        <div class="red-blok_wrapper wow fadeInBottomLeft">
-            <div class="red-blok red-blok_left"></div>
-        </div>
-        
-        <div class="container">
-            <h2 class="speaker__title section__title section__title_line">О тренере</h2>
-        </div>
+      <div class="red-blok_wrapper wow fadeInBottomLeft">
+        <div class="red-blok red-blok_left"></div>
+      </div>
 
-        <div class="container speaker__container">
-            <div class="speaker__photo wow fadeInLeft">
-                <picture>
-                    <source media="(max-width: 767px)" srcset="./img/speaker__photo_mobile.png">
-                    <source media="(min-width: 768px)" srcset="./img/speaker__photo.png">
-                    <img src="./img/speaker__photo.png" alt="Сергей Стужук">
-                </picture>
-            </div>
-            <div class="speaker__about wow fadeInRight">
-                <h2 class="speaker__title section__title section__title_line">О тренере</h2>
-                <div class="speaker__discription">
-                    <h3 class="speaker__name">Сергей Стужук</h3>
-                    <ul class="speaker__achievements">
-                        <li class="speaker__achievement">
-                            <img class="speaker__icon" src="./img/check.png" alt="">
-                            <span>Президент Американо-украинского International Research University.</span>
-                        </li>
-                        <li class="speaker__achievement">
-                            <img class="speaker__icon" src="./img/check.png" alt="">
-                            <span>Более 20 лет опыта в активных выступлениях.</span>
-                        </li>
-                        <li class="speaker__achievement">
-                            <img class="speaker__icon" src="./img/check.png" alt="">
-                            <span>120+ тренингов (открытых и корпоративных).</span>
-                        </li>
-                        <li class="speaker__achievement">
-                            <img class="speaker__icon" src="./img/check.png" alt="">
-                            <span>Обучил 4000+ людей выступать публично (и эффективно).</span>
-                        </li>
-                        <li class="speaker__achievement">
-                            <img class="speaker__icon" src="./img/check.png" alt="">
-                            <span>Президент International Research University (США–Украина).</span>
-                        </li>
-                        <li class="speaker__achievement">
-                            <img class="speaker__icon" src="./img/check.png" alt="">
-                            <span>Эксперт ОБСЕ и ЕБРР.</span>
-                        </li>
-                        <li class="speaker__achievement">
-                            <img class="speaker__icon" src="./img/check.png" alt="">
-                            <span>Член команды Team Europe.</span>
-                        </li>
-                        <li class="speaker__achievement">
-                            <img class="speaker__icon" src="./img/check.png" alt="">
-                            <span>Экс-координатор по связям с общественностью Уполномоченного ВР правам человека.</span>
-                        </li>
-                        <li class="speaker__achievement">
-                            <img class="speaker__icon" src="./img/check.png" alt="">
-                            <span>Полковник Государственной Службы по борьбе с Экономической Преступностью (стаж - 23 г. )</span>
-                        </li>
-                        <li class="speaker__achievement">
-                            <img class="speaker__icon" src="./img/check.png" alt="">
-                            <span>Возглавлял спецотдел ГСБЭП.</span>
-                        </li>
-                        <li class="speaker__achievement">
-                            <img class="speaker__icon" src="./img/check.png" alt="">
-                            <span>Успешно проводит тренинги в Украине, Турции, Словакии, Болгарии и Испании.</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="speaker__title section__title section__title_line">
+          О тренере
+        </h2>
+      </div>
+
+      <div class="container speaker__container">
+        <div class="speaker__photo wow fadeInLeft">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="./img/speaker__photo_mobile.png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/speaker__photo.png"
+            />
+            <img src="./img/speaker__photo.png" alt="Сергей Стужук" />
+          </picture>
         </div>
+        <div class="speaker__about wow fadeInRight">
+          <h2 class="speaker__title section__title section__title_line">
+            О тренере
+          </h2>
+          <div class="speaker__discription">
+            <h3 class="speaker__name">Сергей Стужук</h3>
+            <ul class="speaker__achievements">
+              <li class="speaker__achievement">
+                <img class="speaker__icon" src="./img/check.png" alt="" />
+                <span
+                  >Президент Американо-украинского International Research
+                  University.</span
+                >
+              </li>
+              <li class="speaker__achievement">
+                <img class="speaker__icon" src="./img/check.png" alt="" />
+                <span>Более 20 лет опыта в активных выступлениях.</span>
+              </li>
+              <li class="speaker__achievement">
+                <img class="speaker__icon" src="./img/check.png" alt="" />
+                <span>120+ тренингов (открытых и корпоративных).</span>
+              </li>
+              <li class="speaker__achievement">
+                <img class="speaker__icon" src="./img/check.png" alt="" />
+                <span
+                  >Обучил 4000+ людей выступать публично (и эффективно).</span
+                >
+              </li>
+              <li class="speaker__achievement">
+                <img class="speaker__icon" src="./img/check.png" alt="" />
+                <span
+                  >Президент International Research University
+                  (США–Украина).</span
+                >
+              </li>
+              <li class="speaker__achievement">
+                <img class="speaker__icon" src="./img/check.png" alt="" />
+                <span>Эксперт ОБСЕ и ЕБРР.</span>
+              </li>
+              <li class="speaker__achievement">
+                <img class="speaker__icon" src="./img/check.png" alt="" />
+                <span>Член команды Team Europe.</span>
+              </li>
+              <li class="speaker__achievement">
+                <img class="speaker__icon" src="./img/check.png" alt="" />
+                <span
+                  >Экс-координатор по связям с общественностью Уполномоченного
+                  ВР правам человека.</span
+                >
+              </li>
+              <li class="speaker__achievement">
+                <img class="speaker__icon" src="./img/check.png" alt="" />
+                <span
+                  >Полковник Государственной Службы по борьбе с Экономической
+                  Преступностью (стаж - 23 г. )</span
+                >
+              </li>
+              <li class="speaker__achievement">
+                <img class="speaker__icon" src="./img/check.png" alt="" />
+                <span>Возглавлял спецотдел ГСБЭП.</span>
+              </li>
+              <li class="speaker__achievement">
+                <img class="speaker__icon" src="./img/check.png" alt="" />
+                <span
+                  >Успешно проводит тренинги в Украине, Турции, Словакии,
+                  Болгарии и Испании.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="companys">
-        <div class="companys__title">
-            <div class="container">
-                <h2 class="section__title section__title_mobile section__title_line wow fadeInLeft">Наши клиенты</h2>
-                <h2 class="section__title section__title_line wow fadeInLeft">Компании и организации, которые проходили курсы</h2>
-            </div>
-        </div>
+      <div class="companys__title">
         <div class="container">
-            <ul class="companys__container wow fadeInUp" id="companysSlider">
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/pepsico.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/tppu.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/mobidev.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/privatbank.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/rgc.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/vru.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/susk.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/ob.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/ubkmarkets.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/kmda.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/ec.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/urs.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/impulso.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/suziria.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/eb.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/oua.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/mikolaiv.png" alt="">
-                    </div>
-                </li>
-                <li class="company">
-                    <div class="company__logo-wraper">
-                        <img class="company__logo" src="./img/logo/puratos.png" alt="">
-                    </div>
-                </li>
-            </ul>
+          <h2
+            class="section__title section__title_mobile section__title_line wow fadeInLeft"
+          >
+            Наши клиенты
+          </h2>
+          <h2 class="section__title section__title_line wow fadeInLeft">
+            Компании и организации, которые проходили курсы
+          </h2>
         </div>
+      </div>
+      <div class="container">
+        <ul class="companys__container wow fadeInUp" id="companysSlider">
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/pepsico.png" alt="" />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/tppu.png" alt="" />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/mobidev.png" alt="" />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img
+                class="company__logo"
+                src="./img/logo/privatbank.png"
+                alt=""
+              />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/rgc.png" alt="" />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/vru.png" alt="" />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/susk.png" alt="" />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/ob.png" alt="" />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img
+                class="company__logo"
+                src="./img/logo/ubkmarkets.png"
+                alt=""
+              />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/kmda.png" alt="" />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/ec.png" alt="" />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/urs.png" alt="" />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/impulso.png" alt="" />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/suziria.png" alt="" />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/eb.png" alt="" />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/oua.png" alt="" />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/mikolaiv.png" alt="" />
+            </div>
+          </li>
+          <li class="company">
+            <div class="company__logo-wraper">
+              <img class="company__logo" src="./img/logo/puratos.png" alt="" />
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="comments">
-        <div class="comments__title">
-            <div class="container">
-                <h2 class="section__title section__title_mobile section__title_line section__title_lite wow fadeInRight">Отзывы</h2>
-                <h2 class="section__title section__title_line section__title_lite wow fadeInRight">Что говорят о нас участники курса</h2>
-            </div>
+      <div class="comments__title">
+        <div class="container">
+          <h2
+            class="section__title section__title_mobile section__title_line section__title_lite wow fadeInRight"
+          >
+            Отзывы
+          </h2>
+          <h2
+            class="section__title section__title_line section__title_lite wow fadeInRight"
+          >
+            Что говорят о нас участники курса
+          </h2>
         </div>
-        <div id="commentsSlider" class="wow fadeIn">
-            <div class="comment">
-                <div class="comment__athor">
-                    <img src="./img/farafonova.jpg" alt="Фарафонова Юлия">
-                </div>
-                <div class="comment__content">
-                    <h3 class="comment__title">Фарафонова Юлия</h3>
-                    <blockquote class="comment__text">
-                        <p>Я хочу поделиться с вами своими впечатлениями от тренинга Сергея Стужука "Все секреты успешных выступлений" и своими достижениями, которые произошли благодаря ему. Навык публичного выступления - один из тех, которые требуют постоянной работы над собой, причем целенаправленная работа дает гарантированный результат. При этом настоящая работа возможна только при наличии четкой программы действий и четких рекомендаций, а также поддержки специалиста, владеющего предметом. Все это получает слушатель тренинга Сергея Стужука. Достоиства его тренинга: - четкая структурированная информация и рекомендации. - концентрат полезной информации - ничего лишнего и все нужное. - доброжелательная позитивная атмосфера. Она является неоспоримым подспорьем в тех случаях, когда человек неуверен в себе, имеет страх публичных выступлений и нуждается в наработке положительного опыта. Однако даже не боясь выступать, люди не всегда произносят достойные современные речи, т.. к. многие из них не знают базовых принцпов. Тренинг Сергея дает не только понимание базовых принципов, знание структуры выступления и правил подготовки, но также знакомит слушателся со множеством лайфхаков, шаблонов, домашних заготовок. Именно благодаря прохождению тренинга "Все секреты...", а также поддержке Сергея я смогла преодолеть страх выступления и начать чувствать себя уверенней перед аудиторией. Сергей - это человек, открытый к общению, готовый делиться информацией, помогать, сопровождать своих студентов на пути к успеху.</p>
-                    </blockquote>
-                </div>
-                <a href="/" class="openText">Читать полностью <span></span></a>
-            </div>
-            <div class="comment">
-                <div class="comment__athor">
-                    <img src="./img/malickiy.jpg" alt="Владислав Малицкий">
-                </div>
-                <div class="comment__content">
-                    <h3 class="comment__title">Владислав Малицкий</h3>
-                    <h3 class="comment__subtitle">Собственник компании «Марка Малицкого»</h3>
-                    <blockquote class="comment__text">
-                        <p>Друзья! Стужук - манипулятор наивысшей квалификации! Курс рассчитан на два дня, а они пролетают как несколько часов. Если Вы думаете, что Стужук - спикер, ха-ха, ничего подобного! Во время тренинга он становится частью команды! Если Вы думаете идти или не идти на тренинг, то Стужук Вас туда точно не затянет, т.к. ему нужно, чтобы было больше пессимистов и он им продаст свой тренинг. Теперь о цене, Стужук здесь юлит потому, что то, что Вы получите на тренинге значительно больше и дороже тех денег, которые Вы заплатили. Если Вы надеетесь, что придёте слушать тренинг, то Вы ошибаетесь, Стужук сделает всё, чтобы затянуть Вас в активное участие, из которого Вы потом сами не захотите выходить. </p>
-                        <p>P.S.: Будьте внимательны и бдительны, Стужук может Вас заразить какой-то не известной пока в мире позитивной инфекцией. Лучше возьмите с собой друзей. Стал увереннее общаться, стало легче доносить мысли, а также справляться с неудобными вопросами. Критику теперь расцениваю как помощь в улучшении самого себя. А и критику научился разделять на конструктивную и нет. И появилось желание стать улучшенной версией самого себя.</p>
-                    </blockquote>
-                </div>
-                <a href="/" class="openText">Читать полностью <span></span></a>
-            </div>
-            <div class="comment">
-                <div class="comment__athor">
-                    <img src="./img/degtyarenko.jpg" alt="Мария Дегтяренко">
-                </div>
-                <div class="comment__content">
-                    <h3 class="comment__title">Мария Дегтяренко</h3>
-                    <h4 class="comment__subtitle">Київська міська державна адміністрація, в.о. начальника відділу правового забезпечення Департаменту земельних ресурсів.</h4>
-                    <blockquote class="comment__text">
-                        <p>Враховуючи мою спеціальність публічні виступи це частина професійного життя, будь то судовий процес, тренінг чи лекція в університеті. Тим не менш, в університеті публічні виступи це лише частина теоретичного матеріалу, на курсі Сергія Стужука це практика. Пройшовши інтенсивний курс можу впевнено заявити, що він надзвичайно корисний навіть для моїх колег по професії зі значним стажем роботи. Адже, важливо не просто не боятись говорити на публіку, а вміти говорити цікаво, доводити свої аргументи, відповідати на каверзні запитання, не виходити з себе, не дивитись в підлогу, не бути "стовпом", в цей же час не надто активно жестикулювати.... стільки всього, стільки всього можна навчитись за два дні, а потім вдосконалювати на практиці.</p>
-                        <p>Тож, рекомендую пройти курс всім хто хоче залишати хороші враження про себе після виступу пройти курс публічних виступів у Сергія Стужука, особливо я надзвичайно вдячна йому за здобуті навики.</p>
-                    </blockquote>
-                </div>
-                <a href="/" class="openText">Читать полностью <span></span></a>
-            </div>
-            <div class="comment">
-                <div class="comment__athor">
-                    <img src="./img/akunina.jpg" alt="Анна Акунина">
-                </div>
-                <div class="comment__content">
-                    <h3 class="comment__title">Анна Акунина</h3>
-                    <h4 class="comment__subtitle">Руководитель студий детского творчества в Артек</h4>
-                    <blockquote class="comment__text">
-                        <p>Это просто высочайший уровень. Оказывается, можно рассказывать о серьёзных вещах с юмором и иронией. Свело скулы, заболели мышцы живота, поднялось настроение...ах, да и появились новые знания. </p>
-                        <p>Лучшего курса ораторского искусства я еще не видела. Спасибо Сегрею Стужуку за море позитива. Мастер он и есть мастер!!!</p>
-                    </blockquote>
-                </div>
-                <a href="/" class="openText">Читать полностью <span></span></a>
-            </div>
-            <div class="comment">
-                <div class="comment__athor">
-                    <img src="./img/churyak.jpg" alt="Евгений Чуряк">
-                </div>
-                <div class="comment__content">
-                    <h3 class="comment__title">Евгений Чуряк</h3>
-                    <blockquote class="comment__text">
-                        <p>Я предприниматель с 20 летним опытом в сфере недвижимости, опыт продаж превышает 5 млн. долларов при среднем чеке 4000. Коуч личностного роста и эффективности. Помогаю создавать воронки продаж, ведение проектов по методологии SCRUM, траблшутинг. </p>
-                        <p>Бегаю полумарафоны. Являюсь автором книги "Дымовой занавес". В виду отсутствия опыта публичных выступлений обратился к Стружку Сергею для получения опыта в данной сфере. Выбор сделал интуитивно после того, как увидел Сергея в деле, и не ошибся! </p>
-                        <p>Методы Сергея распространяться настолько широко, что захватывают не только область публичных выступлений. На каждом занятии я расширяю для себя области применения методологии, которую дает Сергей. Я безмерно благодарен ему за каждую минуту, которую он потратил, это стоит большего. Материал очень прост и доступен, работа идет в живую. На мой взгляд данный курс будет полезен тем, кто хочет публично выступать, вести переговоры, поднять самооценку, продавать с вебинара, предвыборные кампании и дебаты.</p>
-                    </blockquote>
-                </div>
-                <a href="/" class="openText">Читать полностью <span></span></a>
-            </div>
-            <div class="comment">
-                <div class="comment__athor">
-                    <img src="./img/todor.jpg" alt="Тодор Мишев">
-                </div>
-                <div class="comment__content">
-                    <h3 class="comment__title">Тодор Мишев</h3>
-                    <h4 class="comment__subtitle">Профессор, доктор Софийского Университета им. К. Орхидского (Болгария)</h4>
-                    <blockquote class="comment__text">
-                        <p>В 2016 году я прошёл курс "Все секреты успешного выступления" Сергея Стужука. Во время курса были показаны полезные техники, инструменты убеждения, примеры из практики. Приобретённые знания из курса применимы в методической работе со студентами, а также в участии семинарах и конференции. Курс рекомендую преподавателям, специалистам, работающим с публикой.</p>
-                    </blockquote>
-                </div>
-                <a href="/" class="openText">Читать полностью <span></span></a>
-            </div>
-            <div class="comment">
-                <div class="comment__athor">
-                    <img src="./img/andru.jpg" alt="Андрей Маковеенко">
-                </div>
-                <div class="comment__content">
-                    <h3 class="comment__title">Андрей Маковеенко</h3>
-                    <h4 class="comment__subtitle">Руководитель направления производства напитков и снеков в PepsiCo</h4>
-                    <blockquote class="comment__text">
-                        <p>Друзья, если у вас было ощущение в жизни «до и после», то тренинг «Все Секреты Успешного Выступления» Сергея Стужука и есть то яркое незабываемое событие, та граница, которая точно изменила меня и точно изменит вас. Вы сможете не боятся, не стеснятся. Вы станете убедительны, красноречивы и вас не поставят в тупик самые трудные вопросы. Сначала я прошёл этот тренинг по собственной инициативе в общей группе. Мой прогресс в искусстве выступления стал убедительным аргументом в организации его и для моей команды. С руководителями отделов PepsiCo мы провели два замечательных дня. Это было как эффективное развитие коммуникационных и презентационных навыков, так и тимбилдинг. Поверьте, моему многолетнему управленческому опыту, хотите быть успешным - пройдите этот тренинг!</p>
-                    </blockquote>
-                </div>
-                <a href="/" class="openText">Читать полностью <span></span></a>
-            </div>
+      </div>
+      <div id="commentsSlider" class="wow fadeIn">
+        <div class="comment">
+          <div class="comment__athor">
+            <img src="./img/farafonova.jpg" alt="Фарафонова Юлия" />
+          </div>
+          <div class="comment__content">
+            <h3 class="comment__title">Фарафонова Юлия</h3>
+            <blockquote class="comment__text">
+              <p>
+                Я хочу поделиться с вами своими впечатлениями от тренинга Сергея
+                Стужука "Все секреты успешных выступлений" и своими
+                достижениями, которые произошли благодаря ему. Навык публичного
+                выступления - один из тех, которые требуют постоянной работы над
+                собой, причем целенаправленная работа дает гарантированный
+                результат. При этом настоящая работа возможна только при наличии
+                четкой программы действий и четких рекомендаций, а также
+                поддержки специалиста, владеющего предметом. Все это получает
+                слушатель тренинга Сергея Стужука. Достоиства его тренинга: -
+                четкая структурированная информация и рекомендации. - концентрат
+                полезной информации - ничего лишнего и все нужное. -
+                доброжелательная позитивная атмосфера. Она является неоспоримым
+                подспорьем в тех случаях, когда человек неуверен в себе, имеет
+                страх публичных выступлений и нуждается в наработке
+                положительного опыта. Однако даже не боясь выступать, люди не
+                всегда произносят достойные современные речи, т.. к. многие из
+                них не знают базовых принцпов. Тренинг Сергея дает не только
+                понимание базовых принципов, знание структуры выступления и
+                правил подготовки, но также знакомит слушателся со множеством
+                лайфхаков, шаблонов, домашних заготовок. Именно благодаря
+                прохождению тренинга "Все секреты...", а также поддержке Сергея
+                я смогла преодолеть страх выступления и начать чувствать себя
+                уверенней перед аудиторией. Сергей - это человек, открытый к
+                общению, готовый делиться информацией, помогать, сопровождать
+                своих студентов на пути к успеху.
+              </p>
+            </blockquote>
+          </div>
+          <a href="/" class="openText">Читать полностью <span></span></a>
         </div>
+        <div class="comment">
+          <div class="comment__athor">
+            <img src="./img/malickiy.jpg" alt="Владислав Малицкий" />
+          </div>
+          <div class="comment__content">
+            <h3 class="comment__title">Владислав Малицкий</h3>
+            <h3 class="comment__subtitle">
+              Собственник компании «Марка Малицкого»
+            </h3>
+            <blockquote class="comment__text">
+              <p>
+                Друзья! Стужук - манипулятор наивысшей квалификации! Курс
+                рассчитан на два дня, а они пролетают как несколько часов. Если
+                Вы думаете, что Стужук - спикер, ха-ха, ничего подобного! Во
+                время тренинга он становится частью команды! Если Вы думаете
+                идти или не идти на тренинг, то Стужук Вас туда точно не
+                затянет, т.к. ему нужно, чтобы было больше пессимистов и он им
+                продаст свой тренинг. Теперь о цене, Стужук здесь юлит потому,
+                что то, что Вы получите на тренинге значительно больше и дороже
+                тех денег, которые Вы заплатили. Если Вы надеетесь, что придёте
+                слушать тренинг, то Вы ошибаетесь, Стужук сделает всё, чтобы
+                затянуть Вас в активное участие, из которого Вы потом сами не
+                захотите выходить.
+              </p>
+              <p>
+                P.S.: Будьте внимательны и бдительны, Стужук может Вас заразить
+                какой-то не известной пока в мире позитивной инфекцией. Лучше
+                возьмите с собой друзей. Стал увереннее общаться, стало легче
+                доносить мысли, а также справляться с неудобными вопросами.
+                Критику теперь расцениваю как помощь в улучшении самого себя. А
+                и критику научился разделять на конструктивную и нет. И
+                появилось желание стать улучшенной версией самого себя.
+              </p>
+            </blockquote>
+          </div>
+          <a href="/" class="openText">Читать полностью <span></span></a>
+        </div>
+        <div class="comment">
+          <div class="comment__athor">
+            <img src="./img/degtyarenko.jpg" alt="Мария Дегтяренко" />
+          </div>
+          <div class="comment__content">
+            <h3 class="comment__title">Мария Дегтяренко</h3>
+            <h4 class="comment__subtitle">
+              Київська міська державна адміністрація, в.о. начальника відділу
+              правового забезпечення Департаменту земельних ресурсів.
+            </h4>
+            <blockquote class="comment__text">
+              <p>
+                Враховуючи мою спеціальність публічні виступи це частина
+                професійного життя, будь то судовий процес, тренінг чи лекція в
+                університеті. Тим не менш, в університеті публічні виступи це
+                лише частина теоретичного матеріалу, на курсі Сергія Стужука це
+                практика. Пройшовши інтенсивний курс можу впевнено заявити, що
+                він надзвичайно корисний навіть для моїх колег по професії зі
+                значним стажем роботи. Адже, важливо не просто не боятись
+                говорити на публіку, а вміти говорити цікаво, доводити свої
+                аргументи, відповідати на каверзні запитання, не виходити з
+                себе, не дивитись в підлогу, не бути "стовпом", в цей же час не
+                надто активно жестикулювати.... стільки всього, стільки всього
+                можна навчитись за два дні, а потім вдосконалювати на практиці.
+              </p>
+              <p>
+                Тож, рекомендую пройти курс всім хто хоче залишати хороші
+                враження про себе після виступу пройти курс публічних виступів у
+                Сергія Стужука, особливо я надзвичайно вдячна йому за здобуті
+                навики.
+              </p>
+            </blockquote>
+          </div>
+          <a href="/" class="openText">Читать полностью <span></span></a>
+        </div>
+        <div class="comment">
+          <div class="comment__athor">
+            <img src="./img/akunina.jpg" alt="Анна Акунина" />
+          </div>
+          <div class="comment__content">
+            <h3 class="comment__title">Анна Акунина</h3>
+            <h4 class="comment__subtitle">
+              Руководитель студий детского творчества в Артек
+            </h4>
+            <blockquote class="comment__text">
+              <p>
+                Это просто высочайший уровень. Оказывается, можно рассказывать о
+                серьёзных вещах с юмором и иронией. Свело скулы, заболели мышцы
+                живота, поднялось настроение...ах, да и появились новые знания.
+              </p>
+              <p>
+                Лучшего курса ораторского искусства я еще не видела. Спасибо
+                Сегрею Стужуку за море позитива. Мастер он и есть мастер!!!
+              </p>
+            </blockquote>
+          </div>
+          <a href="/" class="openText">Читать полностью <span></span></a>
+        </div>
+        <div class="comment">
+          <div class="comment__athor">
+            <img src="./img/churyak.jpg" alt="Евгений Чуряк" />
+          </div>
+          <div class="comment__content">
+            <h3 class="comment__title">Евгений Чуряк</h3>
+            <blockquote class="comment__text">
+              <p>
+                Я предприниматель с 20 летним опытом в сфере недвижимости, опыт
+                продаж превышает 5 млн. долларов при среднем чеке 4000. Коуч
+                личностного роста и эффективности. Помогаю создавать воронки
+                продаж, ведение проектов по методологии SCRUM, траблшутинг.
+              </p>
+              <p>
+                Бегаю полумарафоны. Являюсь автором книги "Дымовой занавес". В
+                виду отсутствия опыта публичных выступлений обратился к Стружку
+                Сергею для получения опыта в данной сфере. Выбор сделал
+                интуитивно после того, как увидел Сергея в деле, и не ошибся!
+              </p>
+              <p>
+                Методы Сергея распространяться настолько широко, что захватывают
+                не только область публичных выступлений. На каждом занятии я
+                расширяю для себя области применения методологии, которую дает
+                Сергей. Я безмерно благодарен ему за каждую минуту, которую он
+                потратил, это стоит большего. Материал очень прост и доступен,
+                работа идет в живую. На мой взгляд данный курс будет полезен
+                тем, кто хочет публично выступать, вести переговоры, поднять
+                самооценку, продавать с вебинара, предвыборные кампании и
+                дебаты.
+              </p>
+            </blockquote>
+          </div>
+          <a href="/" class="openText">Читать полностью <span></span></a>
+        </div>
+        <div class="comment">
+          <div class="comment__athor">
+            <img src="./img/todor.jpg" alt="Тодор Мишев" />
+          </div>
+          <div class="comment__content">
+            <h3 class="comment__title">Тодор Мишев</h3>
+            <h4 class="comment__subtitle">
+              Профессор, доктор Софийского Университета им. К. Орхидского
+              (Болгария)
+            </h4>
+            <blockquote class="comment__text">
+              <p>
+                В 2016 году я прошёл курс "Все секреты успешного выступления"
+                Сергея Стужука. Во время курса были показаны полезные техники,
+                инструменты убеждения, примеры из практики. Приобретённые знания
+                из курса применимы в методической работе со студентами, а также
+                в участии семинарах и конференции. Курс рекомендую
+                преподавателям, специалистам, работающим с публикой.
+              </p>
+            </blockquote>
+          </div>
+          <a href="/" class="openText">Читать полностью <span></span></a>
+        </div>
+        <div class="comment">
+          <div class="comment__athor">
+            <img src="./img/andru.jpg" alt="Андрей Маковеенко" />
+          </div>
+          <div class="comment__content">
+            <h3 class="comment__title">Андрей Маковеенко</h3>
+            <h4 class="comment__subtitle">
+              Руководитель направления производства напитков и снеков в PepsiCo
+            </h4>
+            <blockquote class="comment__text">
+              <p>
+                Друзья, если у вас было ощущение в жизни «до и после», то
+                тренинг «Все Секреты Успешного Выступления» Сергея Стужука и
+                есть то яркое незабываемое событие, та граница, которая точно
+                изменила меня и точно изменит вас. Вы сможете не боятся, не
+                стеснятся. Вы станете убедительны, красноречивы и вас не
+                поставят в тупик самые трудные вопросы. Сначала я прошёл этот
+                тренинг по собственной инициативе в общей группе. Мой прогресс в
+                искусстве выступления стал убедительным аргументом в организации
+                его и для моей команды. С руководителями отделов PepsiCo мы
+                провели два замечательных дня. Это было как эффективное развитие
+                коммуникационных и презентационных навыков, так и тимбилдинг.
+                Поверьте, моему многолетнему управленческому опыту, хотите быть
+                успешным - пройдите этот тренинг!
+              </p>
+            </blockquote>
+          </div>
+          <a href="/" class="openText">Читать полностью <span></span></a>
+        </div>
+      </div>
     </section>
 
     <section class="video">
-        <h2 class="section__title" style="display: none;">Видео-презентация</h2>
-        <!--Для замены видео нужно заменить id в файле video.js-->
-        <div class="container video__container wow fadeInUp">
-            <div class="video__content">
-                <a class="video__link" href="/">
-                    <img class="video__media" src="./img/video_preview.jpg" alt="">
-                </a>
-                <div class="video__button" aria-label="Запуск видео">
-                    <div class="video__button__inner">
-                        <img src="./img/icons/play.png" alt="Play button">
-                    </div>
-                </div>
+      <h2 class="section__title" style="display: none">Видео-презентация</h2>
+      <!--Для замены видео нужно заменить id в файле video.js-->
+      <div class="container video__container wow fadeInUp">
+        <div class="video__content">
+          <a class="video__link" href="/">
+            <img class="video__media" src="./img/video_preview.jpg" alt="" />
+          </a>
+          <div class="video__button" aria-label="Запуск видео">
+            <div class="video__button__inner">
+              <img src="./img/icons/play.png" alt="Play button" />
             </div>
-            <a class="btn video__btn scrollToCourses" href="#">Выбрать курс <span></span></a>
+          </div>
         </div>
+        <a class="btn video__btn scrollToCourses" href="#"
+          >Выбрать курс <span></span
+        ></a>
+      </div>
     </section>
 
     <footer class="footer wow fadeInUp">
-        <div class="contacts">
-           <div class="container contacts__container">
-                <!-- <a href="/" class="contacts__phone contacts__item">
+      <div class="contacts">
+        <div class="container contacts__container">
+          <!-- <a href="/" class="contacts__phone contacts__item">
                         <span class="icon icon_phone contacts__icon"></span>
                         <span>+38 (050) 877 75 35</span>
                 </a>
@@ -594,136 +975,237 @@
                     <span class="icon icon_mail contacts__icon"></span>
                     <span>support@recruting.biz</span>
                 </a> -->
-                <ul class="social">
-                    <li class="social__item">
-                        <a href="https://facebook.com/Recruting.biz" class="social__link icon icon_fb"></a>
-                    </li>
-                    <li class="social__item">
-                        <a href="https://youtube.com/c/Recruting" class="social__link icon icon_ytb"></a>
-                    </li>
-                    <li class="social__item">
-                        <a href="https://www.instagram.com/system_recruta" class="social__link icon icon_inst"></a>
-                    </li>
-                    <li class="social__item">
-                        <a href="https://t.me/system_recruta" class="social__link icon icon_tel"></a>
-                    </li>
-                </ul>
-            </div>
-       </div>
-        <div class="dewelopment">
-            <span>Разработка - </span>
-            <a href="//flawlessmlm.com" class="dewelopment__link">FlawlessMLM.com</a>
+          <ul class="social">
+            <li class="social__item">
+              <a
+                href="https://facebook.com/Recruting.biz"
+                class="social__link icon icon_fb"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://youtube.com/c/Recruting"
+                class="social__link icon icon_ytb"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://www.instagram.com/system_recruta"
+                class="social__link icon icon_inst"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://t.me/system_recruta"
+                class="social__link icon icon_tel"
+              ></a>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="dewelopment">
+        <span>Разработка - </span>
+        <a href="//flawlessmlm.com" class="dewelopment__link"
+          >FlawlessMLM.com</a
+        >
+      </div>
     </footer>
 
-
-    
     <!-- Modal -->
-    <div class="modal fade" id="leadership" tabindex="-1" aria-labelledby="leadership" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="modal-body__img">
-                        <img src="./img/modal_img.png" alt="">
-                    </div>
-                    <h3 class="modal-body__title">Подать заявку</h3>
-                    <div class="modal-body__text">Для подачи заявки выберите удобный для Вас мессенджер. После набора группы на курс, мы вышлем Вам извещение.</div>
-                    <ul class="social">
-                        <li class="social__item">
-                            <a href="https://t.me/Anatomy_of_leadership_bot" target="_blank" class="social__link icon icon_telegram"></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="https://m.me/101255488505102" target="_blank" class="social__link icon icon_messandger"></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="viber://pa?chatURI=anatomyofleadership" target="_blank" class="social__link icon icon_viber"></a>
-                        </li>
-                        <!-- <li class="social__item">
+    <div
+      class="modal fade"
+      id="leadership"
+      tabindex="-1"
+      aria-labelledby="leadership"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <div class="modal-body__img">
+              <img src="./img/modal_img.png" alt="" />
+            </div>
+            <h3 class="modal-body__title">Подать заявку</h3>
+            <div class="modal-body__text">
+              Для подачи заявки выберите удобный для Вас мессенджер. После
+              набора группы на курс, мы вышлем Вам извещение.
+            </div>
+            <ul class="social">
+              <li class="social__item">
+                <a
+                  href="https://t.me/Anatomy_of_leadership_bot"
+                  target="_blank"
+                  class="social__link icon icon_telegram"
+                ></a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="https://m.me/101255488505102"
+                  target="_blank"
+                  class="social__link icon icon_messandger"
+                ></a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="viber://pa?chatURI=anatomyofleadership"
+                  target="_blank"
+                  class="social__link icon icon_viber"
+                ></a>
+              </li>
+              <!-- <li class="social__item">
                             <a href="/" target="_blank" class="social__link icon icon_whatsapp"></a>
                         </li> -->
-                    </ul>
-                    <div class="modal-body__note">Подача заявки Вас ни к чему не обязывает!</div>
-                </div>
+            </ul>
+            <div class="modal-body__note">
+              Подача заявки Вас ни к чему не обязывает!
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="modal fade" id="performance" tabindex="-1" aria-labelledby="performance" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="modal-body__img">
-                        <img src="./img/modal_img.png" alt="">
-                    </div>
-                    <h3 class="modal-body__title">Подать заявку</h3>
-                    <div class="modal-body__text">Для подачи заявки выберите удобный для Вас мессенджер. После набора группы на курс, мы вышлем Вам извещение.</div>
-                    <ul class="social">
-                        <li class="social__item">
-                            <a href="https://t.me/Successful_performances_bot" target="_blank" class="social__link icon icon_telegram"></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="https://m.me/101557028475864" target="_blank" class="social__link icon icon_messandger"></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="viber://pa?chatURI=Successfulperformances" target="_blank" class="social__link icon icon_viber"></a>
-                        </li>
-                        <!-- <li class="social__item">
+    <div
+      class="modal fade"
+      id="performance"
+      tabindex="-1"
+      aria-labelledby="performance"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <div class="modal-body__img">
+              <img src="./img/modal_img.png" alt="" />
+            </div>
+            <h3 class="modal-body__title">Подать заявку</h3>
+            <div class="modal-body__text">
+              Для подачи заявки выберите удобный для Вас мессенджер. После
+              набора группы на курс, мы вышлем Вам извещение.
+            </div>
+            <ul class="social">
+              <li class="social__item">
+                <a
+                  href="https://t.me/Successful_performances_bot"
+                  target="_blank"
+                  class="social__link icon icon_telegram"
+                ></a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="https://m.me/101557028475864"
+                  target="_blank"
+                  class="social__link icon icon_messandger"
+                ></a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="viber://pa?chatURI=Successfulperformances"
+                  target="_blank"
+                  class="social__link icon icon_viber"
+                ></a>
+              </li>
+              <!-- <li class="social__item">
                             <a href="/" target="_blank" class="social__link icon icon_whatsapp"></a>
                         </li> -->
-                    </ul>
-                    <div class="modal-body__note">Подача заявки Вас ни к чему не обязывает!</div>
-                </div>
+            </ul>
+            <div class="modal-body__note">
+              Подача заявки Вас ни к чему не обязывает!
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="modal fade" id="conversation" tabindex="-1" aria-labelledby="conversation" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="modal-body__img">
-                        <img src="./img/modal_img.png" alt="">
-                    </div>
-                    <h3 class="modal-body__title">Подать заявку</h3>
-                    <div class="modal-body__text">Для подачи заявки выберите удобный для Вас мессенджер. После набора группы на курс, мы вышлем Вам извещение.</div>
-                    <ul class="social">
-                        <li class="social__item">
-                            <a href="https://t.me/Effective_negotiations_bot" target="_blank" class="social__link icon icon_telegram"></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="https://m.me/101486971816095" target="_blank" class="social__link icon icon_messandger"></a>
-                        </li>
-                        <li class="social__item">
-                            <a href="viber://pa?chatURI=effectivenegotiations" target="_blank" class="social__link icon icon_viber"></a>
-                        </li>
-                        <!-- <li class="social__item">
+    <div
+      class="modal fade"
+      id="conversation"
+      tabindex="-1"
+      aria-labelledby="conversation"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <div class="modal-body__img">
+              <img src="./img/modal_img.png" alt="" />
+            </div>
+            <h3 class="modal-body__title">Подать заявку</h3>
+            <div class="modal-body__text">
+              Для подачи заявки выберите удобный для Вас мессенджер. После
+              набора группы на курс, мы вышлем Вам извещение.
+            </div>
+            <ul class="social">
+              <li class="social__item">
+                <a
+                  href="https://t.me/Effective_negotiations_bot"
+                  target="_blank"
+                  class="social__link icon icon_telegram"
+                ></a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="https://m.me/101486971816095"
+                  target="_blank"
+                  class="social__link icon icon_messandger"
+                ></a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="viber://pa?chatURI=effectivenegotiations"
+                  target="_blank"
+                  class="social__link icon icon_viber"
+                ></a>
+              </li>
+              <!-- <li class="social__item">
                             <a href="/" target="_blank" class="social__link icon icon_whatsapp"></a>
                         </li> -->
-                    </ul>
-                    <div class="modal-body__note">Подача заявки Вас ни к чему не обязывает!</div>
-                </div>
+            </ul>
+            <div class="modal-body__note">
+              Подача заявки Вас ни к чему не обязывает!
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/wow.js"></script>
-    
+
     <script src="./js/video.js"></script>
     <script src="./js/script.js"></script>
-
-</body>
-
+  </body>
 </html>
 
 <!-- /version_last/application/themes/base/public/site/projects/sss/img -->
