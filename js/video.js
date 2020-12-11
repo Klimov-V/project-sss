@@ -1,44 +1,50 @@
-function findVideos() {
-    const videos = document.querySelectorAll('.video__content');
+let tag = document.createElement("script"),
+  firstScriptTag = document.getElementsByTagName("script")[0],
+  player;
 
-    videos.forEach(video => {
-        setupVideo(video);
-    });
+tag.src = "https://www.youtube.com/iframe_api";
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+function findVideos() {
+  const videos = document.querySelectorAll(".video__content");
+
+  videos.forEach((video) => {
+    setupVideo(video);
+  });
 }
 
 function setupVideo(video) {
-    const link = video.querySelector('.video__link');
-    const media = video.querySelector('.video__media');
-    const button = video.querySelector('.video__button');
-    const id = 'OifU7-VL2fY';
+  const link = video.querySelector(".video__link");
+  const button = video.querySelector(".video__button");
+  const id = "OifU7-VL2fY";
 
-    video.addEventListener('click', () => {
-        let iframe = createIframe(id);
+  video.addEventListener("click", () => {
+    let iframe = document.getElementById("player");
 
-        link.remove();
-        button.remove();
-        video.appendChild(iframe);
-    });
+    iframe.classList.add("video__media");
 
-    link.removeAttribute('href');
-    video.classList.add('video__content_enabled');
-}
+    link.remove();
+    button.remove();
 
-function createIframe(id) {
-    let iframe = document.createElement('iframe');
+    (function onYouTubeIframeAPIReady() {
+      player = new YT.Player("player", {
+        height: "auto",
+        width: "auto",
+        videoId: id,
+        orogin: "http://localhost:3000",
+        events: {
+          onReady: onPlayerReady,
+        },
+      });
+    })();
 
-    iframe.setAttribute('allowfullscreen', '');
-    iframe.setAttribute('allow', 'autoplay');
-    iframe.setAttribute('src', generateURL(id));
-    iframe.classList.add('video__media');
+    function onPlayerReady(event) {
+      event.target.playVideo();
+    }
+  });
 
-    return iframe;
-}
-
-function generateURL(id) {
-    const query = '?rel=0&showinfo=0&autoplay=1';
-
-    return 'https://www.youtube.com/embed/' + id + query;
+  link.removeAttribute("href");
+  video.classList.add("video__content_enabled");
 }
 
 findVideos();
